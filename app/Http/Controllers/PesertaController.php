@@ -47,10 +47,10 @@ class PesertaController extends Controller
         // $batasWaktu = new Carbon('2023-09-6 23:59:59', new DateTimeZone('Asia/Singapore'));
         
         // NANTI BUKA saat udah jam 23:59 WITA
-        // $batasWaktu = Carbon::createFromFormat('Y-m-d H:i:s', '2024-09-05 23:59:59', 'Asia/Singapore');
+        // $batasWaktu = Carbon::createFromFormat('Y-m-d H:i:s', '2025-09-05 23:59:59', 'Asia/Singapore');
         
         // NANTI TUTUP saat udah jam 23:59 WITA
-        $batasWaktu = Carbon::createFromFormat('Y-m-d H:i:s', '2024-09-06 23:59:59', 'Asia/Singapore');
+        $batasWaktu = Carbon::createFromFormat('Y-m-d H:i:s', '2025-09-06 23:59:59', 'Asia/Singapore');
         
         // batas bayar transaksi WDC & DC
         $batasWaktuTransaksi = new Carbon('2024-08-16 09:00:00');
