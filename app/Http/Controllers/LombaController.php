@@ -581,7 +581,7 @@ class LombaController extends Controller
     public function daftarctf(Request $request, $id)
     {
 
-         $validated = $request->validate([
+        $validated = $request->validate([
             'nama_lengkap' => 'required',
             'alamat' => 'required',
             'nama_instansi' => 'required',
