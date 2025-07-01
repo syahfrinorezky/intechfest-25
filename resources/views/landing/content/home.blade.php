@@ -328,7 +328,7 @@
             </svg> --}}
             {{-- <img src="{{asset('images/maskot/Ivy Sambut.gif')}}" alt="" class="scale-[1.1] -mt-20 mb-20"> --}}
             <video autoplay loop muted class="scale-[1.1] -mt-20 mb-20">
-                <source src="{{asset('images/maskot/Ivy Sambut.mp4')}}" type="video/mp4">
+                <source src="{{asset('images/maskot/ivylanding.mp4')}}" type="video/mp4">
             </video>
         </div>
     </div>
