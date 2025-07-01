@@ -36,12 +36,12 @@
                             class="hover:underline">intechfestpnb@gmail.com</a>
                     </li>
                     <li class="mb-5">
-                        <i class="fa-solid fa-phone mr-1"></i><a href="https://wa.me/+6287726675970" target="_blank"
-                            class="hover:underline">+62 877-2667-5970 (Anggreni)</a>
+                        <i class="fa-solid fa-phone mr-1"></i><a href="https://wa.me/+6282146775407" target="_blank"
+                            class="hover:underline">+62 821-4677-5407 (Mita)</a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-phone mr-1"></i><a href="https://wa.me/+6285857684297" target="_blank"
-                            class="hover:underline">+62 858-5768-4297 (Mariani)</a>
+                        <i class="fa-solid fa-phone mr-1"></i><a href="https://wa.me/+6281558964200" target="_blank"
+                            class="hover:underline">+62 815-5896-4200 (Tugus)</a>
                     </li>
                 </ul>
             </div>

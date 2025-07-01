@@ -151,7 +151,7 @@
 </div>
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("September 06, 2024 23:59:59").getTime();
+    var countDownDate = new Date("September 06, 2025 23:59:59").getTime();
     countDownDate.toLocaleString("en-US", {timeZone: "Asia/Singapore"});
     // Update the count down every 1 second
     var x = setInterval(function() {            
@@ -175,7 +175,7 @@
         }
     }, 1000);
     
-    // Refresh the page every 60 seconds
+    // Refresh the page every 10 seconds
         setTimeout(function() {
             location.reload();
         }, 60000);

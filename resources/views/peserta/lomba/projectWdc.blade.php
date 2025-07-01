@@ -175,9 +175,9 @@
         }
     }, 1000);
     
-    // Refresh the page every 60 seconds
-        setTimeout(function() {
-            location.reload();
-        }, 60000);
+    // Refresh the page every 10 seconds
+        // setTimeout(function() {
+        //    location.reload();
+        // }, 60000);
 </script>
 @endsection
