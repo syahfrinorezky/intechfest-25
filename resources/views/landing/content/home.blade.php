@@ -378,8 +378,7 @@
             </div>
             {{-- wdc --}}
             <div class="card-flip lg:col-span-2 lg:col-start-3 xl:col-start-2 xl:col-span-1 mx-auto">
-                <div
-                    class="card-body bg-white border border-gray-200 rounded-lg shadow relative md:col-span-2 xl:col-span-1 group w-96 h-[270px]">
+                <div class="card-body bg-white border border-gray-200 rounded-lg shadow relative md:col-span-2 xl:col-span-1 group w-96 h-[270px]">
                     <div class="w-full absolute card-front top-1/2 -translate-y-1/2">
                         <div class="card-front-sub">
                             <img class="rounded-t-lg w-1/3 md:w-1/2 mx-auto " src="{{asset('images/logo/WDC.png')}}"
@@ -391,26 +390,24 @@
                             <p class="mb-3 font-normal text-center text-gray-600 dark:text-gray-400">Rp. 50.000</p>
                         </div>
                     </div>
-                    <div
-                        class="p-5 card-text absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
+                    <div class="p-5 card-text absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
                         <div class="card-back-sub">
-                            <h5 class="mb-2 text-center text-base sm:text-2xl font-bold tracking-tight text-white">Web Design
-                                Competition
-                            </h5>
+                            <div class="flex w-full justify-center mb-2">
+                                <img class="w-10 mr-2 bg-white rounded-full" src="{{asset('images/logo/WDC.png')}}" alt="logo dc" loading="lazy"/>
+                                <h5 class="mt-1 text-m sm:text-xl font-bold tracking-tight text-white text-center">Web Design Competition</h5>
+                            </div>
                             <p class="mb-3 text-justify font-normal text-justif text-gray-50 line-clamp-6">Politeknik Negeri Bali Web
                                 Design Competition (PNBWDC) merupakan kegiatan perlombaan yang berfokus dalam merancang
                                 serta membuat sebuah website yang memiliki peran sangat penting di era modern ini.
                             </p>
-                            <a href="/detail-wdc"
-                                class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                <span class="z-10">Baca Selengkapnya</span>
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1 z-10" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
+                            <div class="text-center">
+                                <a href="/detail-wdc" class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                    <span class="z-10">Baca Selengkapnya</span>
+                                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1 z-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
