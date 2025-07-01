@@ -7,7 +7,7 @@ use App\Models\Panitia;
 use App\Models\Peserta;
 use App\Mail\EmailSender;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;  
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Auth\Events\Registered;
