@@ -529,7 +529,7 @@
 </section>
 
 {{-- faq --}}
-<div class="bg-white mt-20 lg:mt-0 pt-4 pt-16" id="faq" data-sal="slide-up">
+<div class="bg-white mt-20 lg:mt-0 pt-16" id="faq" data-sal="slide-up">
     <h3 class="text-xl sm:text-2xl font-semibold mb-3 text-center text-primary-lightblue">Punya pertanyaan?</h3>
     <h2
         class="mb-5 lg:mb-16 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white sm:text-3xl">
