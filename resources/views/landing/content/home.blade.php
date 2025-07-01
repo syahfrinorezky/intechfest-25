@@ -36,7 +36,7 @@
                 </svg>
             </a>
             <div class="btn-border-wrapper inline">
-                <a href="https://wa.me/+6287726675970?text=Halo Kak, Saya Ingin Bertanya..." {{-- silahlan di pakai nomor wa yang bersangkutan --}}
+                <a href="https://wa.me/+6282146775407?text=Halo Kak, Saya Ingin Bertanya..." {{-- silahlan di pakai nomor wa yang bersangkutan --}}
                     target="_blank" class="my-2 md:my-0 btn-border relative inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                     <span class="span-border">Hubungi Panitia</span>
                 </a>
@@ -540,11 +540,11 @@
                 <div class="px-4 pt-4">
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-1', 'lg:h-20')" id="faq-1">
                         <div class="flex justify-between items-center">
-                            <h5 class="font-medium"> Bagaimana cara pendaftaran lomba IntechFest 2024?</h5>
+                            <h5 class="font-medium"> Bagaimana cara pendaftaran lomba IntechFest 2025?</h5>
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
-                            Pendaftaran akan dilakukan melalui website official IntechFest 2024 atau dapat melihat tata
+                            Pendaftaran akan dilakukan melalui website official IntechFest 2025 atau dapat melihat tata
                             cara pendaftaran melalui Guidebook.
                         </p>
                     </div>
@@ -560,7 +560,7 @@
                     </div>
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-3', 'lg:h-32')" id="faq-3">
                         <div class="flex justify-between items-center">
-                            <h5 class="font-medium">Apa benefit dari seminar IntechFest 2024?</h5>
+                            <h5 class="font-medium">Apa benefit dari seminar IntechFest 2025?</h5>
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
@@ -598,7 +598,7 @@
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
-                            Iya, untuk cabang lomba PNBWDC dan PNBDC dibuka untuk umum dengan syarat peserta berumur 16 - 23
+                            Iya, untuk cabang lomba PNBWDC dan PNBDC dibuka untuk umum dengan syarat peserta berumur 16 - 25
                             tahun. Dan untuk PNBCTF dibuka untuk umum dengan syarat peserta berumur 16 - 32 tahun.
                         </p>
                     </div>
@@ -609,12 +609,12 @@
 </div>
 
 {{-- thanks to --}}
-<section class="bg-white dark:bg-gray-900 font-Poppins mt-20" data-sal="slide-up">
+<section class="bg-white dark:bg-gray-900 font-Poppins mt-20">
     <div class="lg:py-16 mx-auto max-w-screen-xl px-4">
         <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-center">SPECIAL THANKS TO OUR</h2>
         
         {{-- community partner --}}
-        <section class="">
+        <section class="" data-sal="slide-up">
             <h2 class="text-2xl my-10 md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight text-center text-primary-lightblue dark:text-white">COMMUNITY PARTNER</h2>
             <div class="justify-center items-center flex">
                 <div class="items-center">
@@ -745,8 +745,8 @@
         </section>
     
         {{-- media partner --}}
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight text-center text-primary-lightblue dark:text-white">MEDIA PARTNER</h2>
         <section class="mt-8 lg:mt-12 splide normal" aria-label="Splide Basic HTML Example">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight text-center text-primary-lightblue dark:text-white">MEDIA PARTNER</h2>
             <div class="splide__track relative">
                 <ul class="splide__list partner">
                     <div class="splide__slide flex items-center">

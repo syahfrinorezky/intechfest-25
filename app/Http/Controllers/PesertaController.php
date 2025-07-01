@@ -47,16 +47,16 @@ class PesertaController extends Controller
         // $batasWaktu = new Carbon('2023-09-6 23:59:59', new DateTimeZone('Asia/Singapore'));
         
         // NANTI BUKA saat udah jam 23:59 WITA
-        // $batasWaktu = Carbon::createFromFormat('Y-m-d H:i:s', '2025-09-05 23:59:59', 'Asia/Singapore');
+        $batasWaktu = Carbon::createFromFormat('Y-m-d H:i:s', '2025-09-05 23:59:59', 'Asia/Singapore');
         
         // NANTI TUTUP saat udah jam 23:59 WITA
         $batasWaktu = Carbon::createFromFormat('Y-m-d H:i:s', '2025-09-06 23:59:59', 'Asia/Singapore');
         
         // batas bayar transaksi WDC & DC
-        $batasWaktuTransaksi = new Carbon('2024-08-16 09:00:00');
+        $batasWaktuTransaksi = new Carbon('2025-08-16 09:00:00');
         
         // batas bayar transaksi CTF
-        $batasWaktuTransaksiCTF = new Carbon('2024-09-05 23:59:59');
+        $batasWaktuTransaksiCTF = new Carbon('2025-09-05 23:59:59');
 
         // cek jika peserta yang login mendaftar salah 1 dari 3 lomba yang ada
         $wdcPeserta = Wdc::where('id_peserta', $id_peserta)->first();
@@ -196,7 +196,7 @@ class PesertaController extends Controller
         }else{
             if(empty($ctPeserta)){
                 return view('peserta.chilltalks.form-ct', compact('data_peserta', 'ct'));
-            } // jika ada, ambil transaksi dan cek jika belum validasi
+            } // jika ada ambil transaksi dan cek jika belum validasi
             else if(isset($ctPeserta->id_transaksi)){
                 $transaksi = Transaksi::where('id_transaksi', $ctPeserta->id_transaksi)->first();
                 if($transaksi->validasi == "Belum Tervalidasi"){
@@ -249,17 +249,17 @@ class PesertaController extends Controller
     }
 
      // DOWNLOAD GB WDC
-    function downloadGuidebookWDC(){
+     function downloadGuidebookWDC(){
         $file = Storage::download("public/guidebook/Guide Book Lomba PNBWDC.pdf");  
         return $file;
     }
      // DOWNLOAD GB DC
-    function downloadGuidebookDC(){
+     function downloadGuidebookDC(){
         $file = Storage::download("public/guidebook/Guide Book Lomba PNBDC.pdf");  
         return $file;
     }
      // DOWNLOAD GB CTF
-    function downloadGuidebookCTF(){
+     function downloadGuidebookCTF(){
         $file = Storage::download("public/guidebook/Guide Book Lomba PNBCTF.pdf");  
         return $file;
     }

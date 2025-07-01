@@ -21,7 +21,7 @@
                 <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Politeknik Negeri Bali
                     <span class="text-primary-lightblue">Design Challenge</span></a>
                 <h1 class="text-2xl font-bold pb-3 mt-4">Deskripsi Lomba</h1>
-                <p class="pb-3 text-justify">Politeknik Negeri Bali Design Chellenge (PNBDC) merupakan salah satu sub event perlombaan dalam kegiatan “Information and Technology Festival (IntechFest) 2024”. Perlombaan ini berfokus pada pembuatan desain antarmuka dan pengalaman pengguna untuk aplikasi mobile seputar destinasi wisata Indonesia. Lomba ini juga bertujuan untuk menciptakan desain aplikasi mobile yang menarik secara visual, informatif, fungsional, mudah digunakan dan dapat memenuhi kebutuhan pengguna. Lomba ini ditujukan untuk khalayak umum dengan ketentuan umur mulai dari 16 sampai 23 tahun se-indonesia. Dengan adanya kegiatan ini, diharapkan dapat memberikan peningkatan kualitas keterampilan dibidang UI/UX.
+                <p class="pb-3 text-justify">Politeknik Negeri Bali Design Chellenge (PNBDC) merupakan salah satu sub event perlombaan dalam kegiatan “Information and Technology Festival (IntechFest) 2025”. Perlombaan ini berfokus pada pembuatan desain antarmuka dan pengalaman pengguna untuk aplikasi mobile seputar destinasi wisata Indonesia. Lomba ini juga bertujuan untuk menciptakan desain aplikasi mobile yang menarik secara visual, informatif, fungsional, mudah digunakan dan dapat memenuhi kebutuhan pengguna. Lomba ini ditujukan untuk khalayak umum dengan ketentuan umur mulai dari 16 sampai 25 tahun se-indonesia. Dengan adanya kegiatan ini, diharapkan dapat memberikan peningkatan kualitas keterampilan dibidang UI/UX.
                 </p>
                 <h1 class="text-2xl font-bold pb-3 mt-4" id="timeline">Timeline Lomba</h1>
                 <ol class="items-center sm:flex">
@@ -138,7 +138,7 @@
 
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("August 15, 2024 23:59:59").getTime();
+    var countDownDate = new Date("August 15, 2025 23:59:59").getTime();
     // Update the count down every 1 second
     var x = setInterval(function() {            
         // Get today's date and time
