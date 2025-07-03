@@ -381,12 +381,8 @@
                 <div class="card-body bg-white border border-gray-200 rounded-lg shadow relative md:col-span-2 xl:col-span-1 group w-96 h-[270px]">
                     <div class="w-full absolute card-front top-1/2 -translate-y-1/2">
                         <div class="card-front-sub">
-                            <img class="rounded-t-lg w-1/3 md:w-1/2 mx-auto " src="{{asset('images/logo/WDC.png')}}"
-                                alt="logo dc" loading="lazy"/>
-                            <h5
-                                class="mb-2 text-wdc text-center font-bold tracking-tight text-gray-900 dark:text-white">
-                                Web
-                                Design Competition</h5>
+                            <img class="rounded-t-lg w-1/3 md:w-1/2 mx-auto " src="{{asset('images/logo/WDC.png')}}" alt="logo dc" loading="lazy"/>
+                            <h5 class="mb-2 text-wdc text-center font-bold tracking-tight text-gray-900 dark:text-white">Web Design Competition</h5>
                             <p class="mb-3 font-normal text-center text-gray-600 dark:text-gray-400">Rp. 50.000</p>
                         </div>
                     </div>
