@@ -33,7 +33,7 @@
                 <ul class="text-gray-600 dark:text-gray-400">
                     <li class="mb-5">
                         <i class="fa-regular fa-envelope mr-1"></i><a href="mailto:intechfestpnb@gmail.com"
-                            class="hover:underline">intechfestpnb@gmail.com</a>
+                            class="hover:underline"> intechfestcc@gmail.com</a>
                     </li>
                     <li class="mb-5">
                         <i class="fa-solid fa-phone mr-1"></i><a href="https://wa.me/+6282146775407" target="_blank"
@@ -66,7 +66,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/"
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/"
                     class="hover:underline">Intechfest</a>. All Rights Reserved.
             </span>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
@@ -76,10 +76,10 @@
                 <a target="_blank" href="https://www.youtube.com/@ukmcomputerclub" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <i class="fa-brands fa-youtube text-xl hover:text-red-600"></i>
                 </a>
-                <a target="_blank" href="mailto:intechfestpnb@gmail.com" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a target="_blank" href="mailto:intechfestcc@gmail.com" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <i class="fa-regular fa-envelope text-xl"></i>
                 </a>
-                <a target="_blank" href="https://wa.me/+6285857684297" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a target="_blank" href="https://wa.me/+6282146775407" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <i class="fa-brands fa-whatsapp text-xl hover:text-green-400"></i>
                 </a>
             </div>

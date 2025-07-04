@@ -14,7 +14,7 @@
         <article class="flex flex-col shadow my-4">
             <!-- Article Image -->
             <div>
-                <img src="{{asset('images/lomba/Ivy ngajar 1.png')}}" class="w-full md:w-2/3 lg:w-1/2 mx-auto" loading="lazy">
+                <img src="{{asset('images/lomba/ivy ct.png')}}" class="w-full md:w-2/3 lg:w-1/2 mx-auto" loading="lazy">
             </div>
             <div class="bg-white flex flex-col justify-start p-6">
                 <a href="/#lomba" class="text-primary-lightblue text-sm font-bold uppercase pb-4">Seminar</a>
