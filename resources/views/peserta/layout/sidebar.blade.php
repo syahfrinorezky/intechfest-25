@@ -7,21 +7,27 @@
             <li>
                 <a href="{{url('/peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100">
-                    <i class="fa-solid fa-house text-xl text-black group:text-slate-800"></i>
+                    <div class="aspect-square w-9 h-9 rounded-xl flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-house text-base text-white  group:text-slate-800"></i>
+                    </div>
                     <span class="ml-3 group:text-slate-800">Dashboard</span>
                 </a>
             </li>
             <li>
                 <a href="{{url('/profil-peserta')}}"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <i class="fa-regular fa-address-card text-xl text-black"></i>                
+                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-90 dark:hover:bg-gray-700">
+                    <div class="aspect-square w-9 h-9 rounded-xl flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-user text-base text-white"></i>                
+                    </div>
                     <span class="ml-3">Profil</span>
                 </a>
             </li>
             <li>
                 <a href="{{url('/lomba-peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <i class="fa-solid fa-flag-checkered text-black"></i>      
+                    <div class="aspect-square w-9 h-9 rounded-xl flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-flag-checkered text-base text-white"></i>      
+                    </div>
                     <span class="ml-3">Lomba</span>
                 </a>
             </li>
@@ -29,7 +35,9 @@
                 <!-- sudah buka pendaftaran -->
                 <a href="{{url('/chilltalks-peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <i class="fa-solid fa-microphone-lines text-xl text-black"></i>            
+                    <div class="aspect-square w-9 h-9 rounded-xl flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-microphone-lines text-base text-white"></i>            
+                    </div>
                     <span class="ml-3">ChillTalks</span>
                 </a>
             </li>

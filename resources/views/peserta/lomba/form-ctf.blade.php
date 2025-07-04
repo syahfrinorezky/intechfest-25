@@ -197,7 +197,7 @@
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         aria-describedby="user_avatar_help" id="user_avatar" name="foto" type="file" required>
                     <div class="mt-1 mb-5 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">
-                        Foto data diri berupa KTP/KTM/SIM/Surat Keterangan Mahasiswa/Surat Rekomendasi Sekolah atau Kampus yang terdiri dari 3 anggota dijadikan PDF. Ukuran file maksimal 5 Mega Byte (MB). </div>
+                        Foto data diri berupa KTP/KTM/Surat Keterangan Mahasiswa/Surat Rekomendasi Sekolah atau Kampus yang terdiri dari 3 anggota dijadikan PDF. Ukuran file maksimal 5 Mega Byte (MB). </div>
                     <button type="submit"
                         class="text-white bg-primary-lightblue hover:bg-primary-blue transition-all ease-in-out font-semibold focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Daftar</button>
                 </form>

@@ -56,7 +56,7 @@
                                 alt="ivy wondering">
                             <p class="mb-8 leading-relaxed mt-10 text-center">Mohon menunggu, data Anda sedang divalidasi oleh panitia IntechFest. Jika dalam 2x24 jam panitia belum memvalidasi data Anda, silahkan hubungi nomor WhatsApp dengan mengklik button dibawah ini. Terima kasih atas kerja samanya...</p>
                             <div class="flex justify-center">
-                                <a href="https://wa.me/+6287729130265?text=Halo Kak, Saya {{auth()->user()->name}} ingin mengonfirmasi data pendaftaran saya. Saya mendaftar di lomba PNBCTF" target="_blank"
+                                <a href="https://wa.me/+6282146775407?text=Halo Kak, Saya {{auth()->user()->name}} ingin mengonfirmasi data pendaftaran saya. Saya mendaftar di lomba PNBCTF" target="_blank"
                                     class="inline-flex text-white bg-primary-lightblue border-0 py-2 px-6 focus:outline-none hover:bg-primary-blue transition-all ease-in-out rounded text-lg">Hubungi Panitia</a>
                             </div>
                         </div>

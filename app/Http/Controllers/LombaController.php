@@ -285,7 +285,7 @@ class LombaController extends Controller
             return redirect('lomba-peserta')->with('error', 'File tidak ditemukan.');
         }
         // download file project
-        $filePath = public_path('storage/Project/wdc/'.$filename);
+        $filePath = public_path('../storage/app/public/Project/wdc/'.$filename);
         return response()->download($filePath);
     }
 
