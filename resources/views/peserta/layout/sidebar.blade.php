@@ -8,14 +8,14 @@
                 <a href="{{url('/peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100">
                     <div class="aspect-square w-9 h-9 rounded-xl flex items-center justify-center bg-primary-blue">
-                        <i class="fa-solid fa-house text-base text-white  group:text-slate-800"></i>
+                        <i class="fa-solid fa-house text-base text-white group:text-slate-800"></i>
                     </div>
                     <span class="ml-3 group:text-slate-800">Dashboard</span>
                 </a>
             </li>
             <li>
                 <a href="{{url('/profil-peserta')}}"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-90 dark:hover:bg-gray-700">
+                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                     <div class="aspect-square w-9 h-9 rounded-xl flex items-center justify-center bg-primary-blue">
                         <i class="fa-solid fa-user text-base text-white"></i>                
                     </div>

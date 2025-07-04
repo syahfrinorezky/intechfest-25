@@ -13,7 +13,7 @@
             {{-- jika belum mendaftar lomba --}}
             <h4 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lomba yang dipilih</h4>
             <div class="h-[70vh] flex flex-col items-center justify-center space-y-5">
-                <img src="{{asset('images/maskot/404.svg')}}" alt="ivy pegang 404" class="w-1/2 sm:w-1/4">
+                <img src="{{asset('images/maskot/404.svg')}}" alt="ivy pegang 404" class="w-1/3 sm:w-1/3">
                 <h4 class="mb-2 text-lg text-center font-medium tracking-tight text-gray-900 dark:text-white">
                     Oops... Sepertinya kamu belum memilih lomba. 
                     <br>
