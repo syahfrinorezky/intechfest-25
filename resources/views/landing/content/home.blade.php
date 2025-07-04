@@ -461,7 +461,7 @@
 <section id="chilltalks" class="text-gray-600 body-font" data-sal="slide-up">
     <div class="container mx-auto flex py-24 md:flex-row flex-col items-center">
         <div class="md:hidden w-80">
-            <img class="object-cover object-center rounded mx-auto w-full" alt="hero" src="{{asset('images/lomba/Ivy ngajar 1.png')}}" loading="lazy">
+            <img class="object-cover object-center rounded mx-auto w-full" alt="hero" src="{{asset('images/lomba/ivy ct.png')}}" loading="lazy">
         </div>
 
         <div class="px-3 md:px-0 lg:px-0 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -478,7 +478,7 @@
             </div>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 hidden md:flex">
-            <img class="object-cover object-center rounded mx-auto max-w-96" alt="hero" src="{{asset('images/lomba/Ivy ngajar 1.png')}}" loading="lazy">
+            <img class="object-cover object-center rounded mx-auto max-w-96" alt="hero" src="{{asset('images/lomba/ivy ct.png')}}" loading="lazy">
         </div>
     </div>
 </section>
@@ -488,11 +488,11 @@
     <div class="container mx-auto flex py-24 md:flex-row flex-col items-center">
 
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 hidden md:flex">
-            <img class="object-cover object-center rounded mx-auto max-w-96" alt="hero" src="{{asset('images/lomba/Ivy bingung 1.png')}}" loading="lazy">
+            <img class="object-cover object-center rounded mx-auto max-w-96" alt="hero" src="{{asset('images/lomba/Ivy bingung 2.png')}}" loading="lazy">
         </div>
 
         <div class="w-80 md:hidden">
-            <img class="object-cover object-center rounded mx-auto w-full" alt="hero" src="{{asset('images/lomba/Ivy bingung 1.png')}}" loading="lazy">
+            <img class="object-cover object-center rounded mx-auto w-full" alt="hero" src="{{asset('images/lomba/Ivy bingung 2.png')}}" loading="lazy">
         </div>
 
         <div class="px-3 md:px-0 lg:px-0 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
