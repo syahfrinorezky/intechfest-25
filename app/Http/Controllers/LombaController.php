@@ -693,6 +693,7 @@ class LombaController extends Controller
             'foto.required' => 'Form Upload Foto tidak boleh kosong',
             'foto.mimes' => 'Format file harus PNG, JPEG, atau JPG',
             'foto.max' => 'Ukuran Maksimal file adalah 5 MB',
+            'foto.uploaded' => 'Ukuran file terlalu besar atau gagal diunggah. Maksimal 5 MB'
         ]);
         
         // jalankan fungsi uploadTransaksi dan dapatkan path foto (sesuaikan dengan nama fungsi)

@@ -56,7 +56,7 @@
                         <div class="w-full">
                             <img src="{{asset('images/maskot/TungguApaLagi.png')}}" class="w-1/2 lg:w-1/3 mx-auto"
                                 alt="ivy wondering">
-                            <p class="mb-8 leading-relaxed mt-10 text-center">Terima kasih telah Melakukan Pendaftaran Pada Lomba CTF. <br> Semoga sukses untuk Anda!</p>
+                            <p class="mb-8 leading-relaxed mt-10 text-center">Terima kasih telah Melakukan Pendaftaran Pada Lomba PNBCTF. <br> Semoga sukses dalam Perlombaannya!</p>
                         </div>
                     </div>
                 </section>
