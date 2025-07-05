@@ -353,12 +353,11 @@
                     <div class="card-text p-5 absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
                         <div class="card-back-sub">
                             <div class="flex w-full justify-center mb-2">
-                                <img class="w-10 sm:mr-0 mr-2 bg-white rounded-full" src="{{asset('images/logo/DC.png')}}" alt="logo dc" loading="lazy"/>
+                                <img class="w-8 h-8 sm:h-10 sm:w-10 mr-1 sm:mr-2 bg-white rounded-full" src="{{asset('images/logo/DC.png')}}" alt="logo dc" loading="lazy"/>
                                 <h5 class="mt-1 text-m sm:text-xl font-bold tracking-tight text-white text-center">Design Challenge</h5>
                             </div>
                             <p class="mb-3 font-normal text-justify text-justif text-gray-50 line-clamp-6">Politeknik Negeri Bali
-                                Design Challenge (PNBDC) merupakan kegiatan perlombaan yang akan berfokus dalam
-                                pembuatan sebuah desain UI/UX serta penyelesaian suatu masalah yang nantinya akan dituangkan dalam sebuah desain.</span>
+                                Design Challenge (PNBDC) merupakan kegiatan perlombaan yang akan berfokus dalam pembuatan sebuah desain UI/UX serta penyelesaian suatu masalah yang nantinya akan dituangkan dalam sebuah desain.</span>
                             </p>
                             <div class="text-center">
                                 <a href="/detail-dc" class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -385,12 +384,11 @@
                     <div class="p-5 card-text absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
                         <div class="card-back-sub">
                             <div class="flex w-full justify-center mb-2">
-                                <img class="w-10 sm:mr-0 mr-2 bg-white rounded-full" src="{{asset('images/logo/WDC.png')}}" alt="logo wdc" loading="lazy"/>
+                                <img class="w-8 h-8 sm:h-10 sm:w-10 mr-1 sm:mr-2 bg-white rounded-full" src="{{asset('images/logo/WDC.png')}}" alt="logo wdc" loading="lazy"/>
                                 <h5 class="mt-1 text-m sm:text-xl font-bold tracking-tight text-white text-center">Web Design Competition</h5>
                             </div>
                             <p class="mb-3 text-justify font-normal text-justif text-gray-50 line-clamp-6">Politeknik Negeri Bali Web
-                                Design Competition (PNBWDC) merupakan kegiatan perlombaan yang berfokus dalam merancang
-                                serta membuat sebuah website yang memiliki peran sangat penting di era modern ini.
+                                Design Competition (PNBWDC) merupakan kegiatan perlombaan yang berfokus dalam merancang serta membuat sebuah website yang memiliki peran sangat penting di era modern ini.
                             </p>
                             <div class="text-center">
                                 <a href="/detail-wdc" class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -417,12 +415,11 @@
                     <div class="p-5 card-text absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
                         <div class="card-back-sub">
                             <div class="flex w-full justify-center mb-2">
-                                <img class="w-10 sm:mr-0 mr-2 bg-white rounded-full" src="{{asset('images/logo/CTF.png')}}" alt="logo wdc" loading="lazy"/>
+                                <img class="w-8 h-8 sm:h-10 sm:w-10 mr-1 sm:mr-2 bg-white rounded-full" src="{{asset('images/logo/CTF.png')}}" alt="logo wdc" loading="lazy"/>
                                 <h5 class="mt-1 text-m sm:text-xl font-bold tracking-tight text-white text-center">Capture The Flag</h5>
                             </div>
                             <p class="mb-3 font-normal text-justify text-gray-50 line-clamp-6">
-                                Politeknik Negeri Bali Capture The
-                                Flag (PNBCTF) Merupakan Kegiatan perlombaan yang akan berfokus dalam mencermati permasalahan keamanan jaringan,keamanan komputer, dan keamanan informasi.
+                                Politeknik Negeri Bali Capture The Flag (PNBCTF) Merupakan Kegiatan perlombaan yang akan berfokus dalam mencermati permasalahan keamanan jaringan,keamanan komputer, dan keamanan informasi.
                             </p>
                             <div class="text-center">
                                 <a href="/detail-ctf" class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -514,13 +511,11 @@
 {{-- faq --}}
 <div class="bg-white mt-20 lg:mt-0 pt-16" id="faq" data-sal="slide-up">
     <h3 class="text-xl sm:text-2xl font-semibold mb-3 text-center text-primary-lightblue">Punya pertanyaan?</h3>
-    <h2
-        class="mb-5 lg:mb-16 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white sm:text-3xl">
-        Pertanyaan Yang Sering Ditanyakan</h2>
+    <h2 class="mb-5 lg:mb-16 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white sm:text-3xl">Pertanyaan Yang Sering Ditanyakan</h2>
     <div class="mx-auto max-w-6xl">
         <div class="px-2 bg-white rounded">
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="px-4 pt-4">
+                <div class="px-4">
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-1', 'lg:h-20')" id="faq-1">
                         <div class="flex justify-between items-center">
                             <h5 class="font-medium"> Bagaimana cara pendaftaran lomba IntechFest 2025?</h5>
