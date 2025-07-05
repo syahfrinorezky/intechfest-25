@@ -341,37 +341,33 @@
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-4 xl:grid-cols-3 items-center">
             {{-- dc --}}
             <div class="card-flip lg:col-span-2 xl:col-span-1 mx-auto">
-                <div
-                    class="card-body bg-white border border-gray-200 rounded-lg shadow relative md:col-span-2 xl:col-span-1 group w-96 h-[270px]">
+                <div class="card-body bg-white border border-gray-200 rounded-lg shadow relative md:col-span-2 xl:col-span-1 group w-96 h-[270px]">
                     <div class="w-full absolute card-front top-1/2 -translate-y-1/2">
                         <div class="card-front-sub">
-                            <img class="rounded-t-lg w-1/3 md:w-1/2 mx-auto " src="{{asset('images/logo/CD.png')}}"
+                            <img class="rounded-t-lg w-1/3 md:w-1/2 mx-auto " src="{{asset('images/logo/DC.png')}}"
                                 alt="logo dc" loading="lazy"/>
-                            <h5
-                                class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
-                                Design Challenge</h5>
+                            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Design Challenge</h5>
                             <p class="mb-3 font-normal text-center text-gray-600 dark:text-gray-400">Rp. 50.000</p>
                         </div>
                     </div>
-                    <div
-                        class="card-text p-5 absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
+                    <div class="card-text p-5 absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
                         <div class="card-back-sub">
-                            <h5 class="mb-2 text-center text-xl sm:text-2xl font-bold tracking-tight text-white">Design Challenge
-                            </h5>
+                            <div class="flex w-full justify-center mb-2">
+                                <img class="w-10 sm:mr-0 mr-2 bg-white rounded-full" src="{{asset('images/logo/DC.png')}}" alt="logo dc" loading="lazy"/>
+                                <h5 class="mt-1 text-m sm:text-xl font-bold tracking-tight text-white text-center">Design Challenge</h5>
+                            </div>
                             <p class="mb-3 font-normal text-justify text-justif text-gray-50 line-clamp-6">Politeknik Negeri Bali
                                 Design Challenge (PNBDC) merupakan kegiatan perlombaan yang akan berfokus dalam
                                 pembuatan sebuah desain UI/UX serta penyelesaian suatu masalah yang nantinya akan dituangkan dalam sebuah desain.</span>
                             </p>
-                            <a href="/detail-dc"
-                                class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                <span class="z-10">Baca Selengkapnya</span>
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1 z-10" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
+                            <div class="text-center">
+                                <a href="/detail-dc" class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                    <span class="z-10">Baca Selengkapnya</span>
+                                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1 z-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -389,7 +385,7 @@
                     <div class="p-5 card-text absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
                         <div class="card-back-sub">
                             <div class="flex w-full justify-center mb-2">
-                                <img class="w-10 mr-2 bg-white rounded-full" src="{{asset('images/logo/WDC.png')}}" alt="logo dc" loading="lazy"/>
+                                <img class="w-10 sm:mr-0 mr-2 bg-white rounded-full" src="{{asset('images/logo/WDC.png')}}" alt="logo wdc" loading="lazy"/>
                                 <h5 class="mt-1 text-m sm:text-xl font-bold tracking-tight text-white text-center">Web Design Competition</h5>
                             </div>
                             <p class="mb-3 text-justify font-normal text-justif text-gray-50 line-clamp-6">Politeknik Negeri Bali Web
@@ -410,38 +406,32 @@
             </div>
             {{-- ctf --}}
             <div class="card-flip lg:col-start-2 lg:col-span-2 xl:col-span-1 xl:col-start-3 mx-auto">
-                <div
-                    class="card-body bg-white border border-gray-200 rounded-lg shadow relative md:col-span-2 xl:col-span-1 group w-96 h-[270px]">
+                <div class="card-body bg-white border border-gray-200 rounded-lg shadow relative md:col-span-2 xl:col-span-1 group w-96 h-[270px]">
                     <div class="w-full absolute card-front top-1/2 -translate-y-1/2">
                         <div class="card-front-sub">
-                            <img class="rounded-t-lg w-1/3 md:w-1/2 mx-auto " src="{{asset('images/logo/CTF.png')}}"
-                                alt="logo CTF" loading="lazy"/>
-                            <h5
-                                class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
-                                Capture The Flag</h5>
+                            <img class="rounded-t-lg w-1/3 md:w-1/2 mx-auto " src="{{asset('images/logo/CTF.png')}}" alt="logo CTF" loading="lazy"/>
+                            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Capture The Flag</h5>
                             <p class="mb-3 font-normal text-center text-gray-600 dark:text-gray-400">Rp. 75.000</p>
                         </div>
                     </div>
-                    <div
-                        class="p-5 card-text absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
+                    <div class="p-5 card-text absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
                         <div class="card-back-sub">
-                            <h5 class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-white text-center">
-                                Capture The Flag
-                            </h5>
+                            <div class="flex w-full justify-center mb-2">
+                                <img class="w-10 sm:mr-0 mr-2 bg-white rounded-full" src="{{asset('images/logo/CTF.png')}}" alt="logo wdc" loading="lazy"/>
+                                <h5 class="mt-1 text-m sm:text-xl font-bold tracking-tight text-white text-center">Capture The Flag</h5>
+                            </div>
                             <p class="mb-3 font-normal text-justify text-gray-50 line-clamp-6">
                                 Politeknik Negeri Bali Capture The
                                 Flag (PNBCTF) Merupakan Kegiatan perlombaan yang akan berfokus dalam mencermati permasalahan keamanan jaringan,keamanan komputer, dan keamanan informasi.
                             </p>
-                            <a href="/detail-ctf"
-                                class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                <span class="z-10">Baca Selengkapnya</span>
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1 z-10" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
+                            <div class="text-center">
+                                <a href="/detail-ctf" class="btn-slide relative overflow-hidden border inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-lightblue rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                    <span class="z-10">Baca Selengkapnya</span>
+                                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1 z-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
