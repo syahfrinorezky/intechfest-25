@@ -6,8 +6,8 @@
         <ul class="space-y-2 font-medium">
             <li>
                 <a href="{{url('/panitia')}}"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                    class="flex items-center p-2 text-gray-900 rounded-lg {{ Request::is('panitia') ? 'bg-gray-100' : 'bg-white' }} group hover:bg-gray-100">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center {{ Request::is('panitia') ? 'bg-primary-lightblue' : 'bg-primary-blue' }} group-hover:bg-primary-lightblue">
                         <i class="fa-solid fa-house text-base text-white group:text-slate-800"></i>
                     </div>
                     <span class="ml-3 group:text-slate-800">Dashboard</span>
@@ -15,9 +15,9 @@
             </li>
             <li>
                 <button type="button"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg {{ Request::is('dc-panitia') || Request::is('wdc-panitia') || Request::is('ctf-panitia') ? 'bg-gray-100' : 'bg-white' }} group hover:bg-gray-100"
                     aria-controls="dropdown-lomba" data-collapse-toggle="dropdown-lomba">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center {{ Request::is('dc-panitia') || Request::is('wdc-panitia') || Request::is('ctf-panitia') ? 'bg-primary-lightblue' : 'bg-primary-blue' }} group-hover:bg-primary-lightblue">
                         <i class="fa-solid fa-users text-white text-base"></i>
                     </div>
                     <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Peserta Lomba</span>
@@ -31,22 +31,22 @@
                 <ul id="dropdown-lomba" class="py-2 space-y-2 hidden">
                     <li>
                         <a href="{{url('/dc-panitia')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('dc-panitia') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>DC</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{url('/wdc-panitia')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('wdc-panitia') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>WDC</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{url('/ctf-panitia')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('ctf-panitia') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>CTF</span>
                         </a>
                     </li>
@@ -54,8 +54,8 @@
             </li>
             <li>
                 <a href="{{url('/chilltalk-panitia')}}"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                    class="flex items-center p-2 text-gray-900 rounded-lg {{ Request::is('chilltalk-panitia') ? 'bg-gray-100' : 'bg-white' }} group hover:bg-gray-100">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center {{ Request::is('chilltalk-panitia') ? 'bg-primary-lightblue' : 'bg-primary-blue' }} group-hover:bg-primary-lightblue">
                         <i class="fa-solid fa-microphone-lines text-base text-white"></i>                
                     </div>
                     <span class="ml-3">Peserta ChillTalks</span>
@@ -63,10 +63,9 @@
             </li>
             <li>
                 <button type="button"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                    aria-controls="dropdown-project" data-collapse-toggle="dropdown-project"
-                    >
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg {{ Request::is('project-panitia-wdc') || Request::is('project-panitia-dc') ? 'bg-gray-100' : 'bg-white' }} group hover:bg-gray-100"
+                    aria-controls="dropdown-project" data-collapse-toggle="dropdown-project">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center {{ Request::is('project-panitia-wdc') || Request::is('project-panitia-dc') ? 'bg-primary-lightblue' : 'bg-primary-blue' }} group-hover:bg-primary-lightblue">
                         <i class="fa-solid fa-flag-checkered text-white text-base"></i>                  
                     </div>
                     <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Project</span>
@@ -80,15 +79,15 @@
                 <ul id="dropdown-project" class="py-2 space-y-2 hidden">
                     <li>
                         <a href="{{url('/project-panitia-dc')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('project-panitia-dc') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>DC</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{url('/project-panitia-wdc')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('project-panitia-wdc') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>WDC</span>
                         </a>
                     </li>
@@ -96,9 +95,9 @@
             </li>
             <li>
                 <button type="button"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group {{ Request::is('panitia-transaksi-dc') || Request::is('panitia-transaksi-wdc') || Request::is('panitia-transaksi-ctf') || Request::is('panitia-transaksi-ct') ? 'bg-gray-100' : 'bg-white' }} group hover:bg-gray-100"
                     aria-controls="dropdown-transaksi" data-collapse-toggle="dropdown-transaksi">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center {{ Request::is('panitia-transaksi-dc') || Request::is('panitia-transaksi-wdc') || Request::is('panitia-transaksi-ctf') || Request::is('panitia-transaksi-ct') ? 'bg-primary-lightblue' : 'bg-primary-blue' }} group-hover:bg-primary-lightblue">
                         <i class="fa-solid fa-money-bills text-white text-base"></i>                  
                     </div>
                     <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Data Transaksi</span>
@@ -112,29 +111,29 @@
                 <ul id="dropdown-transaksi" class="py-2 space-y-2 hidden">
                     <li>
                         <a href="{{url('/panitia-transaksi-dc')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('panitia-transaksi-dc') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>DC</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{url('/panitia-transaksi-wdc')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('panitia-transaksi-wdc') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>WDC</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{url('/panitia-transaksi-ctf')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('panitia-transaksi-ctf') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>CTF</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{url('/panitia-transaksi-ct')}}"
-                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                            <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="logo ct" class="w-6 h-6">
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 {{ Request::is('panitia-transaksi-ct') ? 'bg-primary-lightblue text-white' : 'bg-white' }} group hover:text-white hover:bg-primary-lightblue">
+                            <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="logo ct" class="w-6 h-6 bg-white rounded-lg p-1">
                             <span>CT</span>
                         </a>
                     </li>
