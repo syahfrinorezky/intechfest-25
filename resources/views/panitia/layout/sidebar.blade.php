@@ -47,7 +47,7 @@
                         <a href="{{url('/ctf-panitia')}}"
                             class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
                             <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo dc" class="w-6 h-6">
-                            <span>DC</span>
+                            <span>CTF</span>
                         </a>
                     </li>
                 </ul>
@@ -82,7 +82,7 @@
                         <a href="{{url('/project-panitia-dc')}}"
                             class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
                             <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6">
-                            <span>WDC</span>
+                            <span>DC</span>
                         </a>
                     </li>
                     <li>
