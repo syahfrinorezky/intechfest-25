@@ -7,7 +7,7 @@
             <li>
                 <a href="{{url('/peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-lightblue">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
                         <i class="fa-solid fa-house text-base text-white group:text-slate-800"></i>
                     </div>
                     <span class="ml-3 group:text-slate-800">Dashboard</span>
@@ -16,7 +16,7 @@
             <li>
                 <a href="{{url('/profil-peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-lightblue">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
                         <i class="fa-solid fa-user text-base text-white"></i>                
                     </div>
                     <span class="ml-3">Profil</span>
@@ -25,7 +25,7 @@
             <li>
                 <a href="{{url('/lomba-peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-lightblue">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
                         <i class="fa-solid fa-flag-checkered text-base text-white"></i>      
                     </div>
                     <span class="ml-3">Lomba</span>
@@ -35,7 +35,7 @@
                 <!-- sudah buka pendaftaran -->
                 <a href="{{url('/chilltalks-peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-lightblue">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
                         <i class="fa-solid fa-microphone-lines text-base text-white"></i>            
                     </div>
                     <span class="ml-3">ChillTalks</span>
