@@ -17,11 +17,11 @@
     <div class="grid max-w-screen-xl px-4 py-7 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="place-self-center lg:col-span-8">
             <h1 class="max-w-2xl mb-4 text-4xl tracking-tight font-bold leading-none md:text-5xl xl:text-6xl dark:text-white">
-                Intechfest
+                IntechFest
             </h1>
             <p
                 class="max-w-2xl mb-6 font-light text-gray-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-justify">
-                Information and Technology Festival (Intechfest) merupakan brand kegiatan terbesar yang dimiliki oleh Unit
+                Information and Technology Festival (IntechFest) merupakan brand kegiatan terbesar yang dimiliki oleh Unit
                 Kegiatan Mahasiswa
                 Computer Club
                 Politeknik Negeri Bali yang dilaksanakan setiap 1 (satu) tahun sekali.</p>
