@@ -7,7 +7,9 @@
             <li>
                 <a href="{{url('/panitia')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100">
-                    <i class="fa-solid fa-house text-xl text-black group:text-slate-800"></i>
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-house text-base text-white group:text-slate-800"></i>
+                    </div>
                     <span class="ml-3 group:text-slate-800">Dashboard</span>
                 </a>
             </li>
@@ -15,7 +17,9 @@
                 <button type="button"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                     aria-controls="dropdown-lomba" data-collapse-toggle="dropdown-lomba">
-                    <i class="fa-solid fa-users text-black text-xl"></i>
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-users text-white text-base"></i>
+                    </div>
                     <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Peserta Lomba</span>
                     <svg sidebar-toggle-item class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -27,30 +31,44 @@
                 <ul id="dropdown-lomba" class="py-2 space-y-2 hidden">
                     <li>
                         <a href="{{url('/dc-panitia')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">DC</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6">
+                            <span>DC</span>
+                        </a>
                     </li>
                     <li>
                         <a href="{{url('/wdc-panitia')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">WDC</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6">
+                            <span>WDC</span>
+                        </a>
                     </li>
                     <li>
                         <a href="{{url('/ctf-panitia')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">CTF</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo dc" class="w-6 h-6">
+                            <span>DC</span>
+                        </a>
                     </li>
                 </ul>
             </li>
             <li>
                 <a href="{{url('/chilltalk-panitia')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <i class="fa-solid fa-microphone-lines text-xl text-black"></i>                
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-microphone-lines text-base text-white"></i>                
+                    </div>
                     <span class="ml-3">Peserta ChillTalks</span>
                 </a>
             </li>
             <li>
                 <button type="button"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                    aria-controls="dropdown-project" data-collapse-toggle="dropdown-project">
-                    <i class="fa-solid fa-flag-checkered text-black text-xl"></i>                  
+                    aria-controls="dropdown-project" data-collapse-toggle="dropdown-project"
+                    >
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-flag-checkered text-white text-base"></i>                  
+                    </div>
                     <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Project</span>
                     <svg sidebar-toggle-item class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"> 
@@ -62,11 +80,17 @@
                 <ul id="dropdown-project" class="py-2 space-y-2 hidden">
                     <li>
                         <a href="{{url('/project-panitia-dc')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">DC</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6">
+                            <span>WDC</span>
+                        </a>
                     </li>
                     <li>
                         <a href="{{url('/project-panitia-wdc')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">WDC</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6">
+                            <span>WDC</span>
+                        </a>
                     </li>
                 </ul>
             </li>
@@ -74,7 +98,9 @@
                 <button type="button"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                     aria-controls="dropdown-transaksi" data-collapse-toggle="dropdown-transaksi">
-                    <i class="fa-solid fa-money-bills text-black"></i>                  
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-blue">
+                        <i class="fa-solid fa-money-bills text-white text-base"></i>                  
+                    </div>
                     <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Data Transaksi</span>
                     <svg sidebar-toggle-item class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"> 
@@ -86,19 +112,31 @@
                 <ul id="dropdown-transaksi" class="py-2 space-y-2 hidden">
                     <li>
                         <a href="{{url('/panitia-transaksi-dc')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">DC</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="w-6 h-6">
+                            <span>DC</span>
+                        </a>
                     </li>
                     <li>
                         <a href="{{url('/panitia-transaksi-wdc')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">WDC</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="w-6 h-6">
+                            <span>WDC</span>
+                        </a>
                     </li>
                     <li>
                         <a href="{{url('/panitia-transaksi-ctf')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">CTF</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="w-6 h-6">
+                            <span>CTF</span>
+                        </a>
                     </li>
                     <li>
                         <a href="{{url('/panitia-transaksi-ct')}}"
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">ChillTalks</a>
+                            class="flex gap-2 items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                            <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="logo ct" class="w-6 h-6">
+                            <span>CT</span>
+                        </a>
                     </li>
                 </ul>
             </li>
