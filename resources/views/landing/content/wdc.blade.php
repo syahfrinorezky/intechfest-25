@@ -38,9 +38,9 @@
                             <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div class="mt-3 sm:pr-8">
-                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Perpanjangan</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 8 Agustus 2024</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pendaftaran lomba PNBWDC dilakukan pada tanggal 8 Agustus - 15 Agustus 2024</p>
+                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Pendaftaran</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 10 Juli 2025</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pendaftaran lomba PNBWDC dilakukan pada tanggal 10 Juli - 29 Juli 2025</p>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -60,9 +60,9 @@
                             <h3 class="text-md font-semibold text-gray-900 dark:text-white">Pembuatan Project
                             </h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 16 Agustus 2024</time>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 13  Agustus 2025</time>
                             <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pembuatan karya
-                                dilaksanakan pada tanggal 16 Agustus - 6 September 2024, <b>Pukul 23.59 WITA</b></p>
+                                dilaksanakan pada tanggal 13 Agustus - 2 September 2025, <b>Pukul 23.59 WITA</b></p>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -81,8 +81,8 @@
                         <div class="mt-3 sm:pr-8">
                             <h3 class="text-md font-semibold text-gray-900 dark:text-white">Final</h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 21 September 2024</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Final akan dilakukan pada tanggal 21 September 2024 yang berlokasi di kampus Politeknik Negeri Bali</p>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 20 September 2025</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Final akan dilakukan pada tanggal 20 September 2025 yang berlokasi di kampus Politeknik Negeri Bali</p>
                         </div>
                     </li>
                 </ol>
