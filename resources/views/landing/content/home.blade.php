@@ -452,7 +452,7 @@
             <h1 class="title-font font-bold sm:text-3xl text-2xl mb-4 text-gray-900 mt-5 md:mt-0">ChillTalks
                 <br class="hidden lg:inline-block">
             </h1>
-            <p class="mb-8 leading-relaxed text-gray-700 text-justify">ChillTalks merupakan seminar berskala nasional yang membahas seputar teknologi informasi dan bertujuan untuk mengembangkan potensi diri serta meningkatkan pengetahuan di bidang teknologi informasi. Pada tahun ini ChillTalks akan membahas topik seputar "Generative AI dan IoT dalam Transformasi Karir Masa Depan".</p>
+            <p class="mb-8 leading-relaxed text-gray-700 text-justify">ChillTalks merupakan seminar berskala nasional yang membahas seputar teknologi informasi dan bertujuan untuk mengembangkan potensi diri serta meningkatkan pengetahuan di bidang teknologi informasi. Pada tahun ini ChillTalks akan membahas topik seputar "Level Up Your Digital Talent for the Gig Economy Era”.</p>
             <div class="flex justify-center pb-4">
                 {{-- Button Pendaftaran Buka --}}
                 <a href="{{url('/chilltalks-detail')}}"
@@ -522,11 +522,11 @@
                 <div class="px-4">
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-1', 'lg:h-20')" id="faq-1">
                         <div class="flex justify-between items-center">
-                            <h5 class="font-medium"> Bagaimana cara pendaftaran lomba IntechFest 2025?</h5>
+                            <h5 class="font-medium"> Bagaimana cara pendaftaran lomba Intechfest 2025?</h5>
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
-                            Pendaftaran akan dilakukan melalui website official IntechFest 2025 atau dapat melihat tata
+                            Pendaftaran akan dilakukan melalui website official Intechfest 2025 atau dapat melihat tata
                             cara pendaftaran melalui Guidebook.
                         </p>
                     </div>
@@ -537,24 +537,24 @@
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
-                            ChillTalks dibuka untuk umum. Pada tahun ini ChillTalks akan membahas topik seputar "Generative AI dan IoT dalam Transformasi Karir Masa Depan".
+                            ChillTalks dibuka untuk umum. Pada tahun ini ChillTalks akan membahas topik seputar "Level Up Your Digital Talent for the Gig Economy Era".
                         </p>
                     </div>
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-3', 'lg:h-32')" id="faq-3">
                         <div class="flex justify-between items-center">
-                            <h5 class="font-medium">Apa benefit dari seminar IntechFest 2025?</h5>
+                            <h5 class="font-medium">Apa benefit dari seminar Intechfest 2025?</h5>
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
                             Benefit yang akan didapatkan berupa : <br> - E-sertifikat <br> - Ilmu bermanfaat <br> -
-                            Relasi <br> - Merchandise IntechFest
+                            Relasi <br> - Merchandise Intechfest
                         </p>
                     </div>
                 </div>
                 <div class="px-4">
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-4', 'lg:h-24')" id="faq-4">
                         <div class="flex justify-between items-center">
-                            <h5 class="font-medium">Kegiatan IntechFest online Atau offline?</h5>
+                            <h5 class="font-medium">Kegiatan Intechfest online Atau offline?</h5>
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">Kegiatan
@@ -580,8 +580,8 @@
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
-                            Iya, untuk cabang lomba PNBWDC dan PNBDC dibuka untuk umum dengan syarat peserta berumur 16 - 25
-                            tahun. Dan untuk PNBCTF dibuka untuk umum dengan syarat peserta berumur 16 - 32 tahun.
+                            lya, untuk cabang lomba PNBWDC dan PNBDC dibuka untuk umum dengan syarat peserta berumur 15 - 25 tahun. Dan untuk PNBCTF dibuka untuk umum dengan syarat peserta berumur 15 - 32 tahun.
+
                         </p>
                     </div>
                 </div>
