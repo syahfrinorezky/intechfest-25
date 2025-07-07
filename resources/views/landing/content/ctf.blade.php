@@ -38,11 +38,11 @@
                             <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div class="mt-3 sm:pr-8">
-                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Perpanjangan
+                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Pendaftaran
                             </h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 22 Agustus 2024</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pendaftaran lomba PNBCTF akan dilakukan pada tanggal 22 Agustus - 5 September 2024</p>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 10 Juli 2025</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pendaftaran lomba PNBCTF akan dilakukan pada tanggal 10 Juli - 29 Juli 2025</p>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -60,9 +60,9 @@
                         </div>
                         <div class="mt-3 sm:pr-8">
                             <h3 class="text-md font-semibold text-gray-900 dark:text-white">Perlombaan PNBCTF</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 7 September 2024</time>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 6 September 2025</time>
                             <p class="text-base font-normal text-gray-500 dark:text-gray-400">Perlombaan PNBCTF akan
-                                dilaksanakan 2 hari pada tanggal 7 September - 8 September 2024</p>
+                                dilaksanakan pada tanggal 6 September 2025</p>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -81,9 +81,8 @@
                         <div class="mt-3 sm:pr-8">
                             <h3 class="text-sm font-semibold text-gray-900 dark:text-white">Pengumpulan Write-Up</h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 8 September 2024</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pengumpulan Write-Up akan
-                                dilakukan pada tanggal 8 September 2024</p>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 7 September 2025</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pengumpulan write-up akan dilaksanakan selama dua hari, yaitu pada tanggal 7–8 September 2025.</p>
                         </div>
                     </li>
                 </ol>
