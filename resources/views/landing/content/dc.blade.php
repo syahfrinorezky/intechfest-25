@@ -21,7 +21,7 @@
                 <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Politeknik Negeri Bali
                     <span class="text-primary-lightblue">Design Challenge</span></a>
                 <h1 class="text-2xl font-bold pb-3 mt-4">Deskripsi Lomba</h1>
-                <p class="pb-3 text-justify">Politeknik Negeri Bali Design Chellenge (PNBDC) merupakan salah satu sub event perlombaan dalam kegiatan “Information and Technology Festival (IntechFest) 2025”. Perlombaan ini berfokus pada pembuatan desain antarmuka dan pengalaman pengguna untuk aplikasi mobile seputar destinasi wisata Indonesia. Lomba ini juga bertujuan untuk menciptakan desain aplikasi mobile yang menarik secara visual, informatif, fungsional, mudah digunakan dan dapat memenuhi kebutuhan pengguna. Lomba ini ditujukan untuk khalayak umum dengan ketentuan umur mulai dari 16 sampai 25 tahun se-indonesia. Dengan adanya kegiatan ini, diharapkan dapat memberikan peningkatan kualitas keterampilan dibidang UI/UX.
+                <p class="pb-3 text-justify">Politeknik Negeri Bali Design Challenge (PNBDC) merupakan salah satu cabang lomba dalam rangkaian acara Information and Technology Festival (IntechFest) 2025. Perlombaan ini berfokus pada perancangan antarmuka serta pengalaman pengguna untuk aplikasi mobile yang bertemakan edukasi keuangan. Tujuan dari lomba ini adalah menghasilkan desain aplikasi yang menarik secara visual, informatif, fungsional, mudah diakses, serta mampu memenuhi kebutuhan pengguna. Kegiatan ini terbuka bagi masyarakat umum dengan rentang usia 15 hingga 25 tahun dari seluruh Indonesia. Melalui kegiatan ini, diharapkan peserta dapat meningkatkan kemampuan dan kualitas keterampilan dalam bidang UI/UX design.
                 </p>
                 <h1 class="text-2xl font-bold pb-3 mt-4" id="timeline">Timeline Lomba</h1>
                 <ol class="items-center sm:flex">
@@ -39,9 +39,9 @@
                             <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div class="mt-3 sm:pr-8">
-                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Perpanjangan</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 8 Agustus 2024</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pendaftaran lomba PNBDC dilakukan pada tanggal 8 Agustus - 15 Agustus 2024</p>
+                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Pendaftaran</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 10 Juli 2025</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pendaftaran lomba PNBDC dilakukan pada tanggal 10 Juli- 29 Juli 2025</p>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -57,10 +57,10 @@
                             <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div class="mt-3 sm:pr-8">
-                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Pembuatan Karya</h3>
+                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Pembuatan Project</h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 16 Agustus 2024</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pembuatan karya dilaksanakan pada tanggal 16 Agustus - 6 September 2024, <b>Pukul 23.59 WITA</b></p>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 13 Agustus 2025</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pembuatan karya dilaksanakan pada tanggal 13 Agustus - 2 September 2025, <b>Pukul 23.59 WITA</b></p>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -80,8 +80,8 @@
                             <h3 class="text-md font-semibold text-gray-900 dark:text-white">Final
                             </h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 21 September 2024</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Final akan dilakukan pada tanggal 21 September 2024 yang berlokasi di kampus Politeknik Negeri Bali</p>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 20 September 2025</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Final akan dilakukan pada tanggal 20 September 2025 yang berlokasi di kampus Politeknik Negeri Bali</p>
                         </div>
                     </li>
                 </ol>

@@ -15,7 +15,7 @@
     <p class="text-m italic mt-1">Semoga harimu menyenangkan dan produktif!</p>
   </div>
 
-  <!-- Peserta -->
+  <!-- Jumlah Peserta (hanya yang tervalidasi cuy!)-->
   <div class="bg-gray-100 p-6 rounded-lg shadow mb-6">
     <h3 class="text-lg md:text-xl font-bold mb-4">
       Jumlah Peserta Intechfest 2025 <span class="font-normal">(Sudah Tervalidasi)</span>
@@ -61,16 +61,16 @@
           <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="ChillTalks" class="w-[30px] h-[30px]">
         </div>
         <div>
-          <div class="text-xl md:text-2xl font-bold">
-            Offline: {{ $jumlahCTOffline }} Peserta &nbsp;|&nbsp;
+          <div class="text-xl md:text-xl font-bold leading-snug">
+            Offline: {{ $jumlahCTOffline }} Peserta <br>
             Online: {{ $jumlahCTOnline }} Peserta
           </div>
-          <div class="font-base italic text-base md:text-lg">Seminar ChillTalks</div>
+          <div class="italic text-base md:text-lg">Seminar ChillTalks</div>
         </div>
       </div>
+      <!-- Section seminar lese -->
     </div>
   </div>
-
 </main>
 
 @endsection
