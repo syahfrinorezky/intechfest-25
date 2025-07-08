@@ -15,15 +15,73 @@
     <p class="text-m italic mt-1">Semoga harimu menyenangkan dan produktif!</p>
   </div>
 
-  <!-- Jumlah Peserta (hanya yang tervalidasi cuy!)-->
+  <!-- Jumlah Peserta (yang BELUM TERVALIDASI cuy!)-->
   <div class="bg-gray-100 p-6 rounded-lg shadow mb-6">
     <h3 class="text-lg md:text-xl font-bold mb-4">
-      Jumlah Peserta Intechfest 2025 <span class="font-normal">(Sudah Tervalidasi)</span>
+      Jumlah Peserta IntechFest 2025 <span class="font-normal">(Belum Tervalidasi)</span>
     </h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <!-- Design Challenge -->
-      <div class="bg-[#50C4D3] p-4 rounded-xl text-white flex items-center gap-4 h-28">
+      <div class="bg-primary-darkblue p-4 rounded-xl text-white flex items-center gap-4 h-28">
+        <div class="bg-white p-2 rounded-full">
+          <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="DC" class="w-[30px] h-[30px]">
+        </div>
+        <div>
+          <div class="text-xl md:text-2xl font-bold">{{ $jumlahDC_belumvalid ?? 0 }} Peserta</div>
+          <div class="font-base italic text-base md:text-lg">Design Challenge</div>
+        </div>
+      </div>
+
+      <!-- Web Design Competition -->
+      <div class="bg-primary-darkblue p-4 rounded-xl text-white flex items-center gap-4 h-28">
+        <div class="bg-white p-2 rounded-full">
+          <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="WDC" class="w-[30px] h-[30px]">
+        </div>
+        <div>
+          <div class="text-xl md:text-2xl font-bold">{{ $jumlahWDC_belumvalid ?? 0 }} Peserta</div>
+          <div class="font-base italic text-base md:text-lg">Web Design Competition</div>
+        </div>
+      </div>
+
+      <!-- Capture The Flag -->
+      <div class="bg-primary-darkblue p-4 rounded-xl text-white flex items-center gap-4 h-28">
+        <div class="bg-white p-2 rounded-full">
+          <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="CTF" class="w-[30px] h-[30px]">
+        </div>
+        <div>
+          <div class="text-xl md:text-2xl font-bold">{{ $jumlahCTF_belumvalid ?? 0 }} Tim</div>
+          <div class="font-base italic text-base md:text-lg">Capture The Flag</div>
+        </div>
+      </div>
+
+      <!-- Seminar ChillTalks -->
+      <div class="bg-primary-darkblue p-4 rounded-xl text-white flex items-center gap-4 h-28">
+        <div class="bg-white p-2 rounded-full">
+          <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="ChillTalks" class="w-[30px] h-[30px]">
+        </div>
+        <div>
+          <div class="text-xl md:text-xl font-bold leading-snug">
+            Offline: {{ $jumlahCTOffline_belumvalid }} Peserta <br>
+            Online: {{ $jumlahCTOnline_belumvalid }} Peserta
+          </div>
+          <div class="italic text-base md:text-lg">Seminar ChillTalks</div>
+        </div>
+      </div>
+      <!-- Section seminar lese -->
+    </div>
+  </div>
+
+
+  <!-- Jumlah Peserta (hanya yang SUDAH VALID cuy!)-->
+  <div class="bg-gray-100 p-6 rounded-lg shadow mb-6">
+    <h3 class="text-lg md:text-xl font-bold mb-4">
+      Jumlah Peserta IntechFest 2025 <span class="font-normal">(Sudah Valid)</span>
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Design Challenge -->
+      <div class="bg-primary-lightblue p-4 rounded-xl text-white flex items-center gap-4 h-28">
         <div class="bg-white p-2 rounded-full">
           <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="DC" class="w-[30px] h-[30px]">
         </div>
@@ -34,7 +92,7 @@
       </div>
 
       <!-- Web Design Competition -->
-      <div class="bg-[#50C4D3] p-4 rounded-xl text-white flex items-center gap-4 h-28">
+      <div class="bg-primary-lightblue p-4 rounded-xl text-white flex items-center gap-4 h-28">
         <div class="bg-white p-2 rounded-full">
           <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="WDC" class="w-[30px] h-[30px]">
         </div>
@@ -45,7 +103,7 @@
       </div>
 
       <!-- Capture The Flag -->
-      <div class="bg-[#50C4D3] p-4 rounded-xl text-white flex items-center gap-4 h-28">
+      <div class="bg-primary-lightblue p-4 rounded-xl text-white flex items-center gap-4 h-28">
         <div class="bg-white p-2 rounded-full">
           <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="CTF" class="w-[30px] h-[30px]">
         </div>
@@ -56,7 +114,7 @@
       </div>
 
       <!-- Seminar ChillTalks -->
-      <div class="bg-[#50C4D3] p-4 rounded-xl text-white flex items-center gap-4 h-28">
+      <div class="bg-primary-lightblue p-4 rounded-xl text-white flex items-center gap-4 h-28">
         <div class="bg-white p-2 rounded-full">
           <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="ChillTalks" class="w-[30px] h-[30px]">
         </div>
