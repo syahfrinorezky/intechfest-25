@@ -749,16 +749,16 @@
                             <img src="{{asset('images/medpart/infokintamani.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                         </li>
                         <li class="splide__slide flex items-center">
-                            <img src="{{asset('images/medpart/infolombaind.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                            <img src="{{asset('images/medpart/infolombaind.png')}}" class="w-46 bg-cover" alt="" loading="lazy"/>
                         </li>
                         <li class="splide__slide flex items-center">
-                            <img src="{{asset('images/medpart/logoteknoevent.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                            <img src="{{asset('images/medpart/logoteknoevent.png')}}" class="w-46 bg-cover" alt="" loading="lazy"/>
                         </li>
                         <li class="splide__slide flex items-center">
                             <img src="{{asset('images/medpart/logoule.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                         </li>
                         <li class="splide__slide flex items-center">
-                            <img src="{{asset('images/medpart/pendidikanbali.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                            <img src="{{asset('images/medpart/pendidikanbali.png')}}" class="w-46 bg-cover" alt="" loading="lazy"/>
                         </li>
                         <li class="splide__slide flex items-center">
                             <img src="{{asset('images/medpart/up2lomba.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
@@ -790,7 +790,7 @@
                             <img src="{{asset('images/medpart/infomengwi.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                         </li>
                         <li class="splide__slide flex items-center">
-                            <img src="{{asset('images/medpart/logokutaselatan.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                            <img src="{{asset('images/medpart/logokutaselatan.png')}}" class="w-48 bg-cover" alt="" loading="lazy"/>
                         </li>
                         <li class="splide__slide flex items-center">
                             <img src="{{asset('images/medpart/nusabali.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
