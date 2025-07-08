@@ -58,12 +58,16 @@ class PanitiaController extends Controller
 
         if($search){
             $ct = CT::with(['peserta', 'transaksi'])
-            ->whereHas('peserta', function($query) use ($search) {
-                $query->where('nama_lengkap', 'LIKE', '%' . $search . '%');
-                $query->Orwhere('email', 'LIKE', '%' . $search . '%');
-                $query->Orwhere('validasi', 'LIKE', '%' . $search . '%');
+            ->where(function ($query) use ($search) {
+                $query->whereHas('peserta', function ($q) use ($search) {
+                    $q->where('nama_lengkap', 'LIKE', '%' . $search . '%')
+                    ->orWhere('email', 'LIKE', '%' . $search . '%');
+                })
+                ->orWhereHas('transaksi', function ($q) use ($search) {
+                    $q->where('validasi', 'LIKE', '%' . $search . '%');
+                });
             })
-            ->paginate(); 
+            ->paginate();
         }else{
             $ct = CT::with(['peserta', 'transaksi']) 
             ->paginate(15);
