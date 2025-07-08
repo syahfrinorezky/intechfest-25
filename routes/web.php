@@ -14,6 +14,7 @@ use App\Http\Controllers\PanitiaController;
 use App\Http\Controllers\PesertaController;
 use App\Http\Controllers\ChillTalksController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
+use App\Http\Controllers\DashboardControllers;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
@@ -269,6 +270,9 @@ Route::group(['middleware' => ['auth', 'verified', 'level:panitia']], function (
     Route::get('/panitia', [PanitiaController::class, 'index']);
     // semua route panitia dibuat dalam route group ini!!
 
+    // Menampilkan jumlah peserta yang daftar di setiap lombanya
+    Route::get('/panitia', [DashboardControllers::class, 'index'])->middleware('auth');
+
     // CT ================================================================================================================
     // Menampilkan Halaman Chilltalks
     Route::get('/chilltalk-panitia', [PanitiaController::class, 'ct']);
@@ -434,4 +438,6 @@ Route::group(['middleware' => ['auth', 'verified', 'level:peserta']], function (
 
     // // Menampilkan Transaksi
     // Route::get('/pembayaran', [LombaController::class, 'pembayaranctf']);
+
+
 });
