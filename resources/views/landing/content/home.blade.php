@@ -368,6 +368,7 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -382,9 +383,9 @@
                         </div>
                     </div>
                     <div class="p-5 card-text absolute left-0 top-0 card-back opacity-0 bg-primary-lightblue rounded-lg w-96 h-[270px]">
+
                         <div class="card-back-sub">
-                            <div class="flex w-full justify-center mb-2">
-                                <img class="w-8 h-8 sm:h-10 sm:w-10 mr-1 sm:mr-2 bg-white rounded-full" src="{{asset('images/logo/WDC.png')}}" alt="logo wdc" loading="lazy"/>
+                            <div class="flex w-full justify-center mb-2"><img class="w-8 h-8 sm:h-10 sm:w-10 mr-1 sm:mr-2 bg-white rounded-full" src="{{asset('images/logo/WDC.png')}}" alt="logo wdc" loading="lazy"/>
                                 <h5 class="mt-1 text-m sm:text-xl font-bold tracking-tight text-white text-center">Web Design Competition</h5>
                             </div>
                             <p class="mb-3 text-justify font-normal text-justif text-gray-50 line-clamp-6">Politeknik Negeri Bali Web
@@ -399,6 +400,7 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -430,6 +432,7 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
