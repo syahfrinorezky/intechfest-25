@@ -23,7 +23,7 @@
                         <div class="text-md font-normal text-gray-700 dark:text-gray-300">Selamat datang<span
                                 class="bg-gray-100 text-gray-800 text-sm mr-1 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 ml-1 font-bold">Future
                                 Crafters!</span>perkenalkan namaku
-                            <span class="font-semibold text-primary-lightblue dark:text-blue-500">Ivy</span> yang
+                            <a class="font-semibold underline text-primary-lightblue hover:text-primary-blue dark:text-blue-500 transition-all ease-in-out" href="https://www.instagram.com/stories/highlights/18150219730256422/">Ivy</a> yang
                             akan memandu kalian dari sekarang!
                         </div>
                     </div>
