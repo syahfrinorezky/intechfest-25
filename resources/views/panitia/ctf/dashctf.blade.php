@@ -161,7 +161,7 @@
                                     <td colspan="9">
                                         <div class="flex flex-col items-center justify-center gap-8 py-12">
                                             <img src="{{ asset('images/maskot/ivy-cari.svg') }}" alt="Ivy cari data" class="w-1/4 sm:w-1/6">
-                                            <span class="text-gray-500 tracking-wide">Data belum ada</span>
+                                            <span class="text-gray-500 tracking-wide">Data peserta <span class="text-primary-blue font-semibold">CTF</span> tidak ada</span>
                                         </div>
                                     </td>
                                 </tr>
