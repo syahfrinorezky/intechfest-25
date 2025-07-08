@@ -88,7 +88,7 @@
                                 <tr>
                                     <td colspan="4">
                                         <div class="flex flex-col items-center justify-center gap-8 py-12">
-                                            <img src="{{ asset('images/maskot/ivy-cari.svg') }}" alt="Ivy cari data" class="w-1/4 sm:w-1/6">
+                                            <img src="{{ asset('images/maskot/ivy-cari.svg') }}" alt="Ivy cari data" class="w-1/4 sm:w-1/6" loading="lazy">
                                             <span class="text-gray-500 tracking-wide">Tidak ada data project</span>
                                         </div>
                                     </td>
