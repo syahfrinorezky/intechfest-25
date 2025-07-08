@@ -59,12 +59,12 @@ class PanitiaController extends Controller
         if($search){
             $ct = CT::with(['peserta', 'transaksi'])
             ->where(function ($query) use ($search) {
-                $query->whereHas('peserta', function ($q) use ($search) {
-                    $q->where('nama_lengkap', 'LIKE', '%' . $search . '%')
+                $query->whereHas('peserta', function ($query) use ($search) {
+                    $query->where('nama_lengkap', 'LIKE', '%' . $search . '%')
                     ->orWhere('email', 'LIKE', '%' . $search . '%');
                 })
-                ->orWhereHas('transaksi', function ($q) use ($search) {
-                    $q->where('validasi', 'LIKE', '%' . $search . '%');
+                ->orWhereHas('transaksi', function ($query) use ($search) {
+                    $query->where('validasi', 'LIKE', '%' . $search . '%');
                 });
             })
             ->paginate();
@@ -122,6 +122,7 @@ class PanitiaController extends Controller
             $wdc = Wdc::with(['peserta', 'project'])
             ->whereHas('peserta', function($query) use ($search) {
                 $query->where('nama_lengkap', 'LIKE', '%' . $search . '%');
+                $query->orWhere('email', 'LIKE', '%' . $search . '%');
                 $query->Orwhere('validasi', 'LIKE', '%' . $search . '%');
             })
             ->paginate(); 
@@ -198,6 +199,7 @@ class PanitiaController extends Controller
             $dc = Dc::with(['peserta', 'project'])
             ->whereHas('peserta', function($query) use ($search) {
                 $query->where('nama_lengkap', 'LIKE', '%' . $search . '%');
+                $query->orWhere('email', 'LIKE', '%' . $search . '%');
                 $query->Orwhere('validasi', 'LIKE', '%' . $search . '%');
             })
             ->paginate(); 
@@ -271,6 +273,7 @@ class PanitiaController extends Controller
             $ctf = Ctf::with(['peserta'])
             ->whereHas('peserta', function($query) use ($search) {
                 $query->where('nama_lengkap', 'LIKE', '%' . $search . '%');
+                $query->orWhere('email', 'LIKE', '%' . $search . '%');
                 $query->Orwhere('validasi', 'LIKE', '%' . $search . '%');
             })
             ->paginate(); 
@@ -332,6 +335,7 @@ class PanitiaController extends Controller
             ->leftjoin('panitia', 'transaksi.id_panitia', '=', 'panitia.id_panitia')
             ->select('transaksi.*', 'peserta.nama_lengkap AS nama_peserta', 'panitia.nama_lengkap AS nama_panitia', 'peserta.no_hp AS no_hp')
             ->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
+            ->orWhere('peserta.email','LIKE','%'.$search.'%')
             ->orWhere('transaksi.validasi','LIKE','%'.$search.'%')
             ->wherenull('wdc.deleted_at')
             ->paginate();
@@ -364,6 +368,7 @@ class PanitiaController extends Controller
             ->leftjoin('panitia', 'transaksi.id_panitia', '=', 'panitia.id_panitia')
             ->select('transaksi.*', 'peserta.nama_lengkap AS nama_peserta', 'panitia.nama_lengkap AS nama_panitia', 'peserta.no_hp AS no_hp')
             ->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
+            ->orWhere('peserta.email','LIKE','%'.$search.'%')
             ->orWhere('transaksi.validasi','LIKE','%'.$search.'%')
             ->wherenull('dc.deleted_at')
             ->paginate();
@@ -396,6 +401,7 @@ class PanitiaController extends Controller
             ->leftjoin('panitia', 'transaksi.id_panitia', '=', 'panitia.id_panitia')
             ->select('transaksi.*', 'peserta.nama_lengkap AS nama_peserta', 'panitia.nama_lengkap AS nama_panitia', 'peserta.no_hp AS no_hp')
             ->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
+            ->orWhere('peserta.email','LIKE','%'.$search.'%')
             ->orWhere('transaksi.validasi','LIKE','%'.$search.'%')
             ->wherenull('ctf.deleted_at')
             ->paginate();
@@ -428,6 +434,7 @@ class PanitiaController extends Controller
             ->leftjoin('panitia', 'transaksi.id_panitia', '=', 'panitia.id_panitia')
             ->select('transaksi.*', 'peserta.nama_lengkap AS nama_peserta', 'panitia.nama_lengkap AS nama_panitia', 'peserta.no_hp AS no_hp', 'ct.sesi AS sesi_peserta')
             ->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
+            ->orWhere('peserta.email','LIKE','%'.$search.'%')
             ->orWhere('transaksi.validasi','LIKE','%'.$search.'%')
             ->wherenull('ct.deleted_at')
             ->paginate();
@@ -501,7 +508,10 @@ class PanitiaController extends Controller
             ->join('peserta', 'wdc.id_peserta', '=', 'peserta.id_peserta')
             ->select('project.*', 'peserta.*')
             ->where('file_project', 'LIKE', 'WDC%')
-            ->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
+            ->where(function($query) use ($search) {  
+                $query->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
+                    ->orWhere('peserta.email','LIKE','%'.$search.'%');  
+                })
             ->paginate();
         }else{
             $projectwdc = Project::
@@ -526,7 +536,10 @@ class PanitiaController extends Controller
             ->join('peserta', 'dc.id_peserta', '=', 'peserta.id_peserta')
             ->select('project.*', 'peserta.*')
             ->where('file_project', 'LIKE', 'DC%')
-            ->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
+            ->where(function($query) use ($search) {  // 
+                $query->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
+                    ->orWhere('peserta.email','LIKE','%'.$search.'%');  
+                })
             ->paginate();
         }else{
             $projectdc = Project::
