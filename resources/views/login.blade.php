@@ -378,7 +378,7 @@
                                 <div>
                                     <label for="email-login"
                                         class="flex items-center gap-x-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                        <i class="fa-solid fa-envelope text-primary-blue text-base"></i>    
+                                        <i class="fa-solid fa-envelope text-primary-blue text-base mr-2"></i>    
                                         <span>Email</span>
                                     </label>
                                     <input type="email" name="email" id="email-login" placeholder="nama@domain.com" required
@@ -386,7 +386,7 @@
                                 </div>
                                 <div>
                                     <label for="password-login" class="flex items-center gap-x-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                        <i class="fa-solid fa-key text-primary-blue text-base"></i>
+                                        <i class="fa-solid fa-key text-primary-blue text-base mr-2"></i>
                                         <span>Password</span>
                                     </label>
                                     <div class="relative">
