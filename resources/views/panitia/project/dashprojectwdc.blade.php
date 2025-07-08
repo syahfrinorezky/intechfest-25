@@ -74,15 +74,26 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($projectwdc as $data)
-                            <tr
-                                class="border-b dark:border-gray-700 {{($loop->iteration % 2 == 0) ? 'bg-slate-100' : ''}}">
-                                <td class="px-4 py-3">{{$loop->iteration}}</td>
-                                <td class="px-4 py-3">{{$data->nama_lengkap}}</td>
-                                <td class="px-4 py-3">{{$data->file_project}}</td>
-                                <td class="px-4 py-3"><a href="{{url('/project/downloadProjectWDC')}}/{{$data->file_project}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline" target = "__blank">Download</a></td>
-                            </tr>
-                            @endforeach
+                            @if ($projectwdc -> count())
+                                @foreach($projectwdc as $data)
+                                    <tr
+                                        class="border-b dark:border-gray-700 {{($loop->iteration % 2 == 0) ? 'bg-slate-100' : ''}}">
+                                        <td class="px-4 py-3">{{$loop->iteration}}</td>
+                                        <td class="px-4 py-3">{{$data->nama_lengkap}}</td>
+                                        <td class="px-4 py-3">{{$data->file_project}}</td>
+                                        <td class="px-4 py-3"><a href="{{url('/project/downloadProjectWDC')}}/{{$data->file_project}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline" target = "__blank">Download</a></td>
+                                    </tr>
+                                @endforeach
+                            @else
+                                <tr>
+                                    <td colspan="8">
+                                        <div class="flex flex-col items-center justify-center gap-8 py-12">
+                                            <img src="{{ asset('images/maskot/ivy-cari.svg') }}" alt="Ivy cari data" class="w-1/4 sm:w-1/6">
+                                            <span class="text-gray-500 tracking-wide">Tidak ada data project</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endif
                         </tbody>
                     </table>
                 </div>
