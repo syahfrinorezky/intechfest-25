@@ -10,18 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Lupa Password?</title>
     <link rel="shortcut icon" href="{{ asset('images/logo/favicon.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body style="font-family: 'Plus Jakarta Sans','sans-serif' ;">
     <section class="dark:bg-gray-900 relative overflow-y-hidden h-screen">
 
-        {{-- ornamen image bottom --}}
-        <img src="{{asset('images/ornamen/Group 8.png')}}" alt="Ornamen image" class="absolute right-0 bottom-0 hidden lg:block w-[200px] -rotate-90" loading="lazy">
-        <img src="{{asset('images/ornamen/Group 8.png')}}" alt="Ornamen image" class="absolute left-0 bottom-0 hidden lg:block w-[200px]" loading="lazy">
+        {{-- abstract image --}}
+        <!-- {{-- Pojok kiri atas --}} -->
+        <img src="{{ asset('images/abstract/pojok kiri atas.png') }}"
+            alt="pojok kiri atas"
+            class="animate__animated animate__fadeInDown absolute top-0 left-0 w-[200px] z-0 hidden lg:block" />
 
-        {{-- ornamen image top --}}
-        <img src="{{asset('images/ornamen/Group 8.png')}}" alt="Ornamen image" class="absolute top-0 left-0 hidden lg:block w-[200px] rotate-90" loading="lazy">
-        <img src="{{asset('images/ornamen/Group 8.png')}}" alt="Ornamen image" class="absolute top-0 right-0 hidden lg:block w-[200px] -rotate-180" loading="lazy">
+        <!-- {{-- Pojok kanan atas --}} -->
+        <img src="{{ asset('images/abstract/pojok kanan.png') }}"
+            alt="pojok kanan atas"
+            class="animate__animated animate__fadeInDown absolute top-0 right-0 w-[200px] z-0 hidden lg:block" />
+
+        <!-- {{-- Pojok kiri bawah --}} -->
+        <img src="{{ asset('images/abstract/pojok kiri.png') }}"
+            alt="pojok kiri bawah"
+            class="animate__animated animate__fadeInUp absolute bottom-0 left-0 w-[200px] z-0 hidden lg:block" />
+
+        <!-- {{-- Pojok kanan bawah --}} -->
+        <img src="{{ asset('images/abstract/pojok kanan bawah.png') }}"
+            alt="pojok kanan bawah"
+            class="animate__animated animate__fadeInUp absolute bottom-0 right-0 w-[200px] z-0 hidden lg:block" />
+
 
         {{-- ivy --}}
         <div class="ivy hidden lg:block">
@@ -31,7 +46,7 @@
             <a href="/" class="flex items-center mb-6 text-2xl text-gray-900 dark:text-white">
             {{-- logo --}}
             <img class="w-8 h-8 mr-2" src="{{ asset('images/logo/logo.png') }}" alt="logo">
-            <span class="font-semibold">Intech</span>fest
+            <span class="font-semibold">Intech</span>fest2025
             </a>
             {{-- card --}}
             <div class="md:w-full relative z-50 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 overflow-x-hidden overflow-y-hidden w-full">
@@ -77,8 +92,11 @@
                     <form class="space-y-4 md:space-y-6" action="{{ route('password.email') }}" method="POST">
                         @csrf
                             <div>
-                                <label for="email"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                                <label for="email" 
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                    <i class="fa-solid fa-envelope text-primary-blue text-base"></i>   
+                                    Email
+                                </label>
                                 <input type="email" name="email" id="email" placeholder="nama@domain.com" required
                                     class="bg-gray-50 border focus:border-primary-lightblue focus:ring-primary-lightblue border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </div>
