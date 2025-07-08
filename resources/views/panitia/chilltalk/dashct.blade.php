@@ -74,28 +74,39 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($ct as $data)
-                            <tr
-                                class="border-b dark:border-gray-700 {{($loop->iteration % 2 == 0) ? 'bg-slate-100' : ''}}" id="baris{{$loop->iteration}}">
-                                <th class="px-4 py-3">{{$loop->iteration}}</th>
-                                <td class="px-4 py-3">{{$data->peserta->nama_lengkap}}</td>
-                                <td class="px-4 py-3">{{$data->peserta->email}}</td>
-                                <td class="px-4 py-3">{{$data->sesi}}</td>
-                                <td class="px-4 py-3">{{$data->peserta->no_hp}}</td>
-                                {{-- <td class="px-4 py-3">
-                                    <button onclick ="previewImage('baris{{$loop->iteration}}', '{{$data->id_ct}}')" data-modal-target="imageModal"
-                                            data-modal-toggle="imageModal" id='link-foto'>
-                                        <img class="w-20 h-20 rounded" src="{{ asset('storage/'.$data->foto_transaksi) }}" alt="Large avatar" id='foto'>
-                                    </button>
-                                </td> --}}
-                                <td class="px-4 py-3">
-                                    <a class="" href="{{asset('storage/'.$data->transaksi->foto) }}" data-lightbox="example-1" target="__blank" id='link-foto'>
-                                        <h1 class="text-sky-500 italic font-weight-bold hover:underline" value="{{$data->transaksi->foto}}" id="foto">Lihat Foto</h1>
-                                    </a>                                          
-                                </td>
-                                <td class="px-4 py-3">{{ $data->created_at->diffForHumans() }}</td>
-                            </tr>
-                            @endforeach
+                            @if ($ct -> count())
+                                @foreach($ct as $data)
+                                    <tr
+                                        class="border-b dark:border-gray-700 {{($loop->iteration % 2 == 0) ? 'bg-slate-100' : ''}}" id="baris{{$loop->iteration}}">
+                                        <th class="px-4 py-3">{{$loop->iteration}}</th>
+                                        <td class="px-4 py-3">{{$data->peserta->nama_lengkap}}</td>
+                                        <td class="px-4 py-3">{{$data->peserta->email}}</td>
+                                        <td class="px-4 py-3">{{$data->sesi}}</td>
+                                        <td class="px-4 py-3">{{$data->peserta->no_hp}}</td>
+                                        {{-- <td class="px-4 py-3">
+                                            <button onclick ="previewImage('baris{{$loop->iteration}}', '{{$data->id_ct}}')" data-modal-target="imageModal"
+                                                    data-modal-toggle="imageModal" id='link-foto'>
+                                                <img class="w-20 h-20 rounded" src="{{ asset('storage/'.$data->foto_transaksi) }}" alt="Large avatar" id='foto'>
+                                            </button>
+                                        </td> --}}
+                                        <td class="px-4 py-3">
+                                            <a class="" href="{{asset('storage/'.$data->transaksi->foto) }}" data-lightbox="example-1" target="__blank" id='link-foto'>
+                                                <h1 class="text-sky-500 italic font-weight-bold hover:underline" value="{{$data->transaksi->foto}}" id="foto">Lihat Foto</h1>
+                                            </a>                                          
+                                        </td>
+                                        <td class="px-4 py-3">{{ $data->created_at->diffForHumans() }}</td>
+                                    </tr>
+                                @endforeach
+                            @else
+                                <tr>
+                                    <td colspan="7">
+                                        <div class="flex flex-col items-center justify-center gap-8 py-12">
+                                            <img src="{{ asset('images/maskot/ivy-cari.svg') }}" alt="Ivy cari data" class="w-1/4 sm:w-1/6">
+                                            <span class="text-gray-500 tracking-wide">Data peserta <span class="text-primary-blue font-semibold">Chilltalks</span> tidak ada</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endif
                         </tbody>
                     </table>
                 </div>
