@@ -31,7 +31,7 @@
                     <span class="ml-3">Lomba</span>
                 </a>
             </li>
-            <li>
+            {{-- <li>
                 <!-- sudah buka pendaftaran -->
                 <a href="{{url('/chilltalks-peserta')}}"
                     class="flex items-center p-2 text-gray-900 rounded-lg {{ Request::is('chilltalks-peserta') ? 'bg-gray-100' : 'bg-white' }} group hover:bg-gray-100">
@@ -40,7 +40,7 @@
                     </div>
                     <span class="ml-3">ChillTalks</span>
                 </a>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </aside>
