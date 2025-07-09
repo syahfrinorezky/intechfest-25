@@ -17,7 +17,7 @@
                 <a href="#" class="flex ml-2 md:mr-24">
                     <img src="{{ asset('images/logo/logo.png') }}" class="h-8 mr-3" alt="FlowBite Logo" loading="lazy"/>
                     <span
-                        class="self-center text-xl sm:text-2xl whitespace-nowrap dark:text-white"><span class="font-semibold">Intech</span>fest</span>
+                        class="self-center text-xl sm:text-2xl whitespace-nowrap dark:text-white"><span class="font-semibold">Intech</span>Fest</span>
                 </a>
             </div>
             <div class="flex items-center">

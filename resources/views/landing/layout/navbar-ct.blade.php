@@ -5,7 +5,7 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" class="flex items-center">
             <img src="{{ asset('images/logo/logo.png') }}" class="h-8 mr-3" alt="Intechfest Logo" />
-            <span class="self-center hidden md:block text-2xl whitespace-nowrap dark:text-white"><span class="font-semibold">Intech</span>fest</span>
+            <span class="self-center hidden md:block text-2xl whitespace-nowrap dark:text-white"><span class="font-semibold">Intech</span>Fest</span>
         </a>
         <div class="flex md:order-2">
             @auth

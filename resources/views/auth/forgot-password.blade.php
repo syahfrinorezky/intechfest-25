@@ -46,7 +46,7 @@
             <a href="/" class="flex items-center mb-6 text-2xl text-gray-900 dark:text-white">
             {{-- logo --}}
             <img class="w-8 h-8 mr-2" src="{{ asset('images/logo/logo.png') }}" alt="logo">
-            <span class="font-semibold">Intech</span>fest2025
+            <span class="font-semibold">Intech</span>Fest2025
             </a>
             {{-- card --}}
             <div class="md:w-full relative z-50 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 overflow-x-hidden overflow-y-hidden w-full">

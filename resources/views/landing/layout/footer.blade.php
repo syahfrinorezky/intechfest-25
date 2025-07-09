@@ -5,7 +5,7 @@
                 <a href="/" class="flex-col items-center">
                     <div class="flex items-center">
                         <img src="{{asset('images/logo/logo.png')}}" class="h-8 mr-3" alt="Flowbite Logo" loading="lazy"/>
-                        <span class="self-center text-2xl whitespace-nowrap dark:text-white"><span class="font-semibold">Intech</span>fest</span>
+                        <span class="self-center text-2xl whitespace-nowrap dark:text-white"><span class="font-semibold">Intech</span>Fest</span>
                     </div>
                     <p class="mt-3">Kampus Bukit, Jimbaran, South Kuta, Badung Regency, Bali 80364</p>
                 </a>
@@ -67,7 +67,7 @@
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/"
-                    class="hover:underline">Intechfest</a>. All Rights Reserved.
+                    class="hover:underline">IntechFest</a>. All Rights Reserved.
             </span>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <a target="_blank" href="https://instagram.com/intechfest.cc?igshid=MzRlODBiNWFlZA==" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">

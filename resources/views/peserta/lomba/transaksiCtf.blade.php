@@ -74,6 +74,20 @@
                         </div>
                     </div>
                     @endif
+                    <div class="flex flex-col space-y-2 mb-5 ">
+                        <h1 class="font-medium text-sm text-gray-900">Rekening Pembayaran</h1>
+                        <p class="text-sm text-gray-900">BCA <br> a.n <span class="text-primary-blue font-semibold">NI NYOMAN MITASARI</span></p>
+                        <div class="flex gap-x-2">
+                            <input type="text" id="rekening" value="1420920021" readonly
+                            class="border rounded text-center py-2 text-sm bg-gray-200 text-gray-800" />
+                            
+                            <button id="copyBtn"
+                            onclick="copyRekening()"
+                            class="bg-primary-lightblue text-white px-3 py-1 rounded hover:bg-primary-blue transition-colors ease-in-out duration-300">
+                            Salin
+                            </button>
+                        </div>
+                    </div>
                     <form method="POST" action="/transaksi-ctf/{{$peserta->id_peserta}}" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
@@ -93,3 +107,25 @@
     </section>
 </div>
 @endsection
+
+{{-- js buat tombol salin rekening ya --}}
+<script>
+    function copyRekening() {
+        const rekening = document.getElementById('rekening').value;
+        const copyBtn = document.getElementById('copyBtn');
+
+        navigator.clipboard.writeText(rekening).then(() => {
+            copyBtn.textContent = "Disalin!";
+            copyBtn.classList.remove("bg-primary-lightblue");
+            copyBtn.classList.add("bg-primary-blue");
+
+            setTimeout(() => {
+                copyBtn.textContent = "Salin";
+                copyBtn.classList.remove("bg-primary-blue");
+                copyBtn.classList.add("bg-primary-lightblue");
+            }, 2000);
+        }).catch(() => {
+            copyBtn.textContent = "Gagal!";
+        });
+    }
+</script>

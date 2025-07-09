@@ -130,19 +130,33 @@
                     </div>
                     <div>
                         <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Sesi Chilltalks</label>
-                            <select name="sesi" id="sesi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required>
-                                <option hidden class="italic" value="">-- DIPILIH --</option>
-                                @if($ct >= 200)
-                                    <option value="Online">Online | Tersedia</option>
-                                @else
-                                    <option value="Online">Online | Tersedia</option>
-                                    <option value="Offline">Offline | Tersedia</option>
-                                @endif
-                            </select>
+                        <select name="sesi" id="sesi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required>
+                            <option hidden class="italic" value="">-- DIPILIH --</option>
+                            @if($ct >= 200)
+                                <option value="Online">Online | Tersedia</option>
+                            @else
+                                <option value="Online">Online | Tersedia</option>
+                                <option value="Offline">Offline | Tersedia</option>
+                            @endif
+                        </select>
                     </div>
-                    <label class="block mt-2.5 text-sm font-medium text-gray-900 dark:text-white" for="user_avatar">Upload
+                    <div class="flex flex-col space-y-2 my-2.5">
+                        <h1 class="font-medium text-sm text-gray-900">Rekening Pembayaran</h1>
+                        <p class="text-sm text-gray-900">BCA <br> a.n <span class="text-primary-blue font-semibold">NI NYOMAN MITASARI</span></p>
+                        <div class="flex gap-x-2">
+                            <input type="text" id="rekening" value="1420920021" readonly
+                            class="border rounded text-center py-2 text-sm bg-gray-200 text-gray-800" />
+                            
+                            <button id="copyBtn"
+                            type="button"
+                            onclick="copyRekening()"
+                            class="bg-primary-lightblue text-white px-3 py-1 rounded hover:bg-primary-blue transition-colors ease-in-out duration-300">
+                            Salin
+                            </button>
+                        </div>
+                    </div>
+                    <label class="block my-2.5 text-sm font-medium text-gray-900 dark:text-white" for="user_avatar">Upload
                         Bukti Transfer</label>
-                    <div class="mb-5 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help"><b>Pembayaran dari Bank ke Dana</b>, akan dikenakan biaya tambahan sebesar <b>Rp.500</b></p></div>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         aria-describedby="user_avatar_help" id="user_avatar" name="foto" type="file" required>
@@ -156,3 +170,25 @@
     <!-- End block -->
 </div>
 <!-- end content -->
+
+{{-- js buat tombol salin rekening ya --}}
+<script>
+    function copyRekening() {
+        const rekening = document.getElementById('rekening').value;
+        const copyBtn = document.getElementById('copyBtn');
+
+        navigator.clipboard.writeText(rekening).then(() => {
+            copyBtn.textContent = "Disalin!";
+            copyBtn.classList.remove("bg-primary-lightblue");
+            copyBtn.classList.add("bg-primary-blue");
+
+            setTimeout(() => {
+                copyBtn.textContent = "Salin";
+                copyBtn.classList.remove("bg-primary-blue");
+                copyBtn.classList.add("bg-primary-lightblue");
+            }, 2000);
+        }).catch(() => {
+            copyBtn.textContent = "Gagal!";
+        });
+    }
+</script>
