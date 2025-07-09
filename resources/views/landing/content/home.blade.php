@@ -732,69 +732,72 @@
     
         {{-- media partner --}}
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight text-center text-primary-lightblue dark:text-white">MEDIA PARTNER</h2>
-        <section class="mt-8 lg:mt-12 splide normal" aria-label="Splide Basic HTML Example">
-            <div class="splide__track relative">
-                <ul class="splide__list partner">
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/banglidaily.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/beritalomba.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infobaturiti.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infokintamani.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infolombaind.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logoteknoevent.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logoule.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/pendidikanbali.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/up2lomba.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/bulelengterkini.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                </ul>
-            </div>
-        </section>
-        <section class="splide reverse pb-16" aria-label="Splide Basic HTML Example">
-            <div class="splide__track relative">
-                <ul class="splide__list partner">
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/denpasarcerita.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/gudanglomba.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infoklungkung.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infolombait.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infomengwi.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logokutaselatan.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/nusabali.png')}}" class="w-52 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                </ul>
-            </div>
-        </section>
+            <section class="mt-8 lg:mt-12 splide normal" aria-label="Splide Basic HTML Example">
+                <!-- Bagian atas nya -->
+                <div class="splide__track relative">
+                    <ul class="splide__list partner">
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/banglidaily.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/beritalomba.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/infobaturiti.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/infokintamani.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/infolombaind.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/logoteknoevent.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/logoule.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/pendidikanbali.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/up2lomba.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/bulelengterkini.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Bagian bawah nya-->
+            <section class="splide reverse pb-16" aria-label="Splide Basic HTML Example">
+                <div class="splide__track relative">
+                    <ul class="splide__list partner">
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/denpasarcerita.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/gudanglomba.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/infoklungkung.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/infolombait.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/infomengwi.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/logokutaselatan.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                        <li class="splide__slide flex items-center">
+                            <img src="{{asset('images/medpart/nusabali.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        </li>
+                    </ul>
+                </div>
+            </section>
     </div>
 </section>
 
