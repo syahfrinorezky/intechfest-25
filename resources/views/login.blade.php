@@ -346,7 +346,7 @@
                 {{-- logo --}}
                 <a href="{{url('/')}}" class="flex items-center mb-6 text-2xl text-gray-900 dark:text-white">
                     <img class="w-8 h-8 mr-2" src="{{asset('images/logo/logo.png')}}" alt="logo">
-                    <span class="font-semibold">Intech</span>fest2025
+                    <span class="font-semibold">Intech</span>Fest2025
                 </a>
 
                 {{-- card --}}

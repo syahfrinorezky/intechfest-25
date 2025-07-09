@@ -1,7 +1,7 @@
 @extends('landing.main')
 
 {{-- judul halaman disini --}}
-@section('title', 'Intechfest')
+@section('title', 'IntechFest')
 @section('content')
 
 {{-- navbar --}}
@@ -503,7 +503,7 @@
                     <img src="{{asset('images/logo/monokrom.png')}}" class="w-6" alt="logo">
                     <span class="ml-4 flex items-start flex-col leading-none">
                         <span class="text-xs text-gray-600 mb-1">Daftar akun</span>
-                        <span class="title-font font-medium">Intechfest</span>
+                        <span class="title-font font-medium">IntechFest</span>
                     </span>
                 </a>
             </div>
@@ -521,11 +521,11 @@
                 <div class="px-4">
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-1', 'lg:h-20')" id="faq-1">
                         <div class="flex justify-between items-center">
-                            <h5 class="font-medium"> Bagaimana cara pendaftaran lomba Intechfest 2025?</h5>
+                            <h5 class="font-medium"> Bagaimana cara pendaftaran lomba IntechFest 2025?</h5>
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
-                            Pendaftaran akan dilakukan melalui website official Intechfest 2025 atau dapat melihat tata
+                            Pendaftaran akan dilakukan melalui website official IntechFest 2025 atau dapat melihat tata
                             cara pendaftaran melalui Guidebook.
                         </p>
                     </div>
@@ -541,23 +541,23 @@
                     </div>
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-3', 'lg:h-32')" id="faq-3">
                         <div class="flex justify-between items-center">
-                            <h5 class="font-medium">Apa benefit dari seminar Intechfest 2025?</h5>
+                            <h5 class="font-medium">Apa benefit dari seminar IntechFest 2025?</h5>
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
                             Benefit yang akan didapatkan berupa : <br> - E-sertifikat <br> - Ilmu bermanfaat <br> -
-                            Relasi <br> - Merchandise Intechfest
+                            Relasi <br> - Merchandise IntechFest
                         </p>
                     </div>
                 </div>
                 <div class="px-4">
                     <div class="mb-2 bg-white rounded-lg border-primary-lightblue border-2 cursor-pointer p-3 faq-section" onclick="faqPop('#faq-4', 'lg:h-24')" id="faq-4">
                         <div class="flex justify-between items-center">
-                            <h5 class="font-medium">Kegiatan Intechfest online Atau offline?</h5>
+                            <h5 class="font-medium">Kegiatan IntechFest online Atau offline?</h5>
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">Kegiatan
-                            Intechfest akan diadakan secara Hybrid yang dimana babak penyisihan akan dilaksanakan secara
+                            IntechFest akan diadakan secara Hybrid yang dimana babak penyisihan akan dilaksanakan secara
                             online, dan babak final akan dilaksanakan secara offline di Kampus Politeknik Negeri Bali.
                         </p>
                     </div>
