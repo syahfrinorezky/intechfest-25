@@ -5,7 +5,7 @@
                 <a href="/" class="flex-col items-center">
                     <div class="flex items-center">
                         <img src="{{asset('images/logo/logo.png')}}" class="h-8 mr-3" alt="Flowbite Logo" loading="lazy"/>
-                        <span class="self-center text-2xl whitespace-nowrap dark:text-white"><span class="font-semibold">Intech</span>fest</span>
+                        <span class="self-center text-2xl whitespace-nowrap dark:text-white"><span class="font-semibold">Intech</span>Fest</span>
                     </div>
                     <p class="mt-3">Kampus Bukit, Jimbaran, South Kuta, Badung Regency, Bali 80364</p>
                 </a>
