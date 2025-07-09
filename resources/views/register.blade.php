@@ -90,21 +90,21 @@
                             @csrf
                             <div>
                                 <label for="email" class="flex items-center gap-x-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                    <i class="fa-solid fa-envelope text-primary-blue text-base"></i>
+                                    <i class="fa-solid fa-envelope text-primary-blue text-base mr-2"></i>
                                     <span>Email</span>
                                 </label>
                                 <input type="email" name="email" id="email" placeholder="nama@domain.com" class=" focus:border-primary-lightblue focus:ring-primary-lightblue border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
                             </div>
                             <div>
                                 <label for="nama" class="flex items-center gap-x-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                    <i class="fa-solid fa-user text-primary-blue text-base"></i>
+                                    <i class="fa-solid fa-user text-primary-blue text-base mr-2"></i>
                                     <span>Nama Lengkap</span>
                                 </label>
                                 <input type="text" name="nama" id="nama" placeholder="Nama Lengkap..." class=" border focus:border-primary-lightblue focus:ring-primary-lightblue border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
                             </div>
                             <div>
                                 <label for="password" class="flex items-center gap-x-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                    <i class="fa-solid fa-key text-primary-blue text-base"></i>
+                                    <i class="fa-solid fa-key text-primary-blue text-base mr-2"></i>
                                     <span>Password</span>
                                 </label>
                                 <div class="relative">
