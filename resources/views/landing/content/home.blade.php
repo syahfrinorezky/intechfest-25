@@ -452,13 +452,13 @@
                 <br class="hidden lg:inline-block">
             </h1>
             <p class="mb-8 leading-relaxed text-gray-700 text-justify">ChillTalks merupakan seminar berskala nasional yang membahas seputar teknologi informasi dan bertujuan untuk mengembangkan potensi diri serta meningkatkan pengetahuan di bidang teknologi informasi. Pada tahun ini ChillTalks akan membahas topik seputar "Level Up Your Digital Talent for the Gig Economy Era”.</p>
-            <div class="flex justify-center pb-4">
+            <!-- <div class="flex justify-center pb-4">
                 {{-- Button Pendaftaran Buka --}}
                 <a href="{{url('/chilltalks-detail')}}"
                     class="inline-flex overflow-hidden relative btn-slide text-white bg-primary-lightblue border-0 py-2 px-6 focus:outline-none rounded text-lg">
                     <span class="relative z-10">Daftar Chilltalks</span>
                 </a>
-            </div>
+            </div> -->
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 hidden md:flex">
             <img class="object-cover object-center rounded mx-auto max-w-96" alt="hero" src="{{asset('images/lomba/ivy ct.png')}}" loading="lazy">
@@ -557,7 +557,7 @@
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">Kegiatan
-                            IntecFest akan diadakan secara Hybrid yang dimana babak penyisihan akan dilaksanakan secara
+                            Intechfest akan diadakan secara Hybrid yang dimana babak penyisihan akan dilaksanakan secara
                             online, dan babak final akan dilaksanakan secara offline di Kampus Politeknik Negeri Bali.
                         </p>
                     </div>
@@ -579,8 +579,7 @@
                             <i class="fa-solid fa-chevron-down transition-all duration-500"></i>
                         </div>
                         <p class="overflow-hidden font-light text-justify h-0 transition-all duration-500">
-                            lya, untuk cabang lomba PNBWDC dan PNBDC dibuka untuk umum dengan syarat peserta berumur 15 - 25 tahun. Dan untuk PNBCTF dibuka untuk umum dengan syarat peserta berumur 15 - 32 tahun.
-
+                            Iya, untuk cabang lomba PNBWDC, PNBDC, dan PNBCTF dibuka untuk umum, dengan syarat peserta berumur 15 – 25 tahun.
                         </p>
                     </div>
                 </div>
@@ -607,8 +606,14 @@
             </div>
         </section>
 
-        {{-- sponsor --}}
-        <section class="bg-white dark:bg-gray-900 sponsors" data-sal="slide-up">
+        <!-- sementara pake ini dlu sebagai jarak antara compart sama medpart -->
+        <br>
+        <br>
+        <br>
+        <!-- setelah sponsor ada baru dihapus bagian br nya -->
+
+        <!-- {{-- sponsor --}} -->
+        <!-- <section class="bg-white dark:bg-gray-900 sponsors" data-sal="slide-up">
             <div class="lg:pt-24 mx-auto max-w-screen-xl px-4">
                 <h2 class="text-2xl mt-12 lg:mt-16 font-bold tracking-tight pt-2 leading-tight text-center text-primary-lightblue dark:text-white md:text-3xl lg:text-4xl">SPONSORSHIP</h2>
                 <div class="pb-4 lg:pb-4 splide" role="group" aria-label="Splide Basic HTML Example">
@@ -723,7 +728,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     
         {{-- media partner --}}
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight text-center text-primary-lightblue dark:text-white">MEDIA PARTNER</h2>
@@ -731,55 +736,34 @@
             <div class="splide__track relative">
                 <ul class="splide__list partner">
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo Madingevent.id.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/banglidaily.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/gudanglombaind.JPG')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/beritalomba.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo lombamahasiswa.id.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/infobaturiti.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Info Event Mahasiswa Indonesia.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/infokintamani.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infolombaest.jpg')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/infolombaind.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infolombaevent.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/logoteknoevent.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/infolombasch.PNG')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/logoule.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/picsart.jpg')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/pendidikanbali.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo bali viral.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/up2lomba.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo balibroadcast.jpeg')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo LT.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/LOGO ILE 2.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo Info Lomba Bali.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo info lomba IT.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo eventnasional.jpeg')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo webinarindonesia.jpeg')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo Mitralomba.jpg')}}" class="w-52 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/bulelengterkini.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
                     </div>
                 </ul>
             </div>
@@ -788,58 +772,25 @@
             <div class="splide__track relative">
                 <ul class="splide__list partner">
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/eventmahasiswa3.png')}}" class="w-64 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/denpasarcerita.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo events.ina.jpeg')}}" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/gudanglomba.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Event Network 2.png')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/infoklungkung.png')}}" class="w-36 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo medpar (2).png')}}" class="w-64 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/infolombait.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo png.png')}}" class="w-48 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/infomengwi.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo sekolahkukampusku.jpg')}}" class="w-48 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/logokutaselatan.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
                     </div>
                     <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo_Event_Nasional.PNG')}}" class="w-48 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo_infokampusku.PNG')}}" class="w-48 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo_Infokupedia.PNG')}}" class="w-48 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Media Dewata Warna.png')}}" class="w-52 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Logo Eventnya Mahasiswa.png')}}" class="w-64 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Kawal Event Logo.png')}}" class="w-48 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/seminarcenter.png')}}" class="w-40 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/seputar.infoid.jpg')}}" class="w-44 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/Webinar Center ID Logo.png')}}" class="w-48 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/LOGO EVENT JAWA TIMUR-09.png')}}" class="w-52 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/logo-csrelated.jpeg')}}" class="w-52 bg-cover" alt="" loading="lazy"/>
-                    </div>
-                    <div class="splide__slide flex items-center">
-                        <img src="{{asset('images/medpart/orang-siber.jpg')}}" class="w-52 bg-cover" alt="" loading="lazy"/>
+                        <img src="{{asset('images/medpart/nusabali.png')}}" class="w-52 bg-cover" alt="" loading="lazy"/>
                     </div>
                 </ul>
             </div>
