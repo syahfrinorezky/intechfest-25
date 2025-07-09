@@ -336,15 +336,16 @@
             </div>
 
             <div class="animate__animated animate__fadeInUp animate__delay-1s animate__fast flex flex-col items-center justify-center lg:w-2/5 lg:mr-36 w-full">
-                <a href="/" class="flex items-center mb-6 text-2xl text-gray-900 dark:text-white">
-                    {{-- logo --}}
-                    <img class="w-8 h-8 mr-3" src="{{ asset('images/logo/logo.png') }}" alt="logo" loading="lazy">
-                    <span class="font-semibold">Intech</span>fest
-                </a>
+                
                 {{-- card --}}
                 <div class="md:w-full relative z-30 bg-white rounded-lg shadow-lg shadow-gray-400 dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 overflow-x-hidden overflow-y-hidden w-full">
                     {{-- form login --}}
                     <div class="p-6 space-y-4 md:space-y-6 sm:p-8 transition-all duration-1000" id="form-login">
+                        <a href="/" class="flex items-center justify-center mb-6 text-2xl text-gray-900 dark:text-white">
+                            {{-- logo --}}
+                            <img class="w-8 h-8 mr-3" src="{{ asset('images/logo/logo.png') }}" alt="logo" loading="lazy">
+                            <span class="font-semibold">Intech</span>fest
+                        </a>
                         <h1 class="text-xl leading-tight tracking-normal text-gray-900 md:text-2xl dark:text-white">
                             Sign In
                         </h1>
@@ -364,13 +365,17 @@
                             @csrf
                                 <div>
                                     <label for="email-login"
-                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                                        class="flex items-center gap-x-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                        <i class="fa-solid fa-envelope text-primary-blue text-base"></i>    
+                                        <span>Email</span>
+                                    </label>
                                     <input type="email" name="email" id="email-login" placeholder="nama@domain.com" required
                                         class="border focus:border-primary-lightblue focus:ring-primary-lightblue border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 </div>
                                 <div>
-                                    <label for="password-login" class="block text-sm font-medium text-gray-900 dark:text-white">
-                                        Password
+                                    <label for="password-login" class="flex items-center gap-x-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                        <i class="fa-solid fa-key text-primary-blue text-base"></i>
+                                        <span>Password</span>
                                     </label>
                                     <div class="relative">
                                         <input type="password" name="password" id="password" placeholder="••••••••" class=" focus:border-primary-lightblue focus:ring-primary-lightblue border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
@@ -383,7 +388,7 @@
                                         Sign In
                                     </button>
                                 </div>
-                                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                                <p class="text-sm text-center font-light text-gray-500 dark:text-gray-400">
                                     Lupa password?
                                     <a href="{{ url ('/forgot-password')}}"
                                         class="font-medium focus:outline-cyan-500 underline text-primary-lightblue hover:text-primary-blue dark:text-primary-500 transition-all ease-in-out cursor-pointer" id="lupa-password">
