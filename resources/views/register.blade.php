@@ -29,11 +29,18 @@
 
     <section class="dark:bg-gray-900 relative overflow-y-hidden overflow-x-hidden h-screen">
         {{-- abstract image --}}
-        <img src="{{asset('images/abstract/Group 21.png')}}" alt="abstract image" class="animate__animated animate__fadeInBottomRight absolute max-w-[500px] -bottom-44 -right-44 hidden lg:block"> 
-        <img src="{{asset('images/abstract/Group 20.png')}}" alt="abstract image" class="animate__animated animate__fadeInTopLeft absolute max-w-[500px] -top-44 -left-44 hidden lg:block"> 
+        <!-- Pojok kanan atas yak-->
+        <img src="{{ asset('images/abstract/pojok kiri.png') }}"
+         alt="pojok kiri bawah"
+         class="animate__animated animate__fadeInDown absolute bottom-0 left-0 w-[200px] z-0 hidden lg:block" />
+
+         <!-- Pojok kiri bawah cuy -->
+         <img src="{{ asset('images/abstract/pojok kanan.png') }}"
+         alt="pojok kanan atas"
+         class="animate__animated animate__fadeInUp absolute top-0 right-0 w-[200px] z-0 hidden lg:block" />
 
         {{-- Kotak abstrak di kiri --}}
-        <img src="{{asset('images/abstract/Square.png')}}" alt="abstract image" class="animate__animated animate__fadeInUp absolute left-80 top-20 hidden lg:block w-4" loading="lazy">
+        <!-- <img src="{{asset('images/abstract/Square.png')}}" alt="abstract image" class="animate__animated animate__fadeInUp absolute left-80 top-20 hidden lg:block w-4" loading="lazy"> -->
         <img src="{{asset('images/abstract/Square.png')}}" alt="abstract image" class="animate__animated animate__fadeInUp absolute left-36 top-64 hidden xl:block w-2.5" loading="lazy">
         <img src="{{asset('images/abstract/Square.png')}}" alt="abstract image" class="animate__animated animate__fadeInUp absolute left-56 bottom-56 hidden xl:block w-1.5" loading="lazy">
         
@@ -44,15 +51,20 @@
 
         <div class="flex items-center justify-center px-6 py-8 mx-auto lg:h-screen h-screen">
             <div class="animate__animated animate__fadeInUp animate__delay-1s animate__fast flex flex-col items-center justify-center lg:w-2/5 w-full">
+                {{-- logo --}}
+                <a href="{{url('/')}}" class="flex items-center mb-6 text-2xl text-gray-900 dark:text-white">
+                    <img class="w-8 h-8 mr-2" src="{{asset('images/logo/logo.png')}}" alt="logo">
+                    <span class="font-semibold">Intech</span>fest2025
+                </a>
                 {{-- card --}}
                 <div class="md:w-full relative z-30 bg-white rounded-lg shadow-lg shadow-gray-400 md:mt-0 sm:max-w-md xl:p-0 overflow-x-hidden w-full">
                     {{-- content register --}}
                     <div class="p-6 space-y-4 md:space-y-6 sm:p-8 transition-all duration-1000" id="form-register">
-                        {{-- logo --}}
+                        <!-- {{-- logo --}}
                         <a href="{{url('/')}}" class="flex items-center justify-center mb-6 text-2xl text-gray-900 dark:text-white">
                             <img class="w-8 h-8 mr-2" src="{{asset('images/logo/logo.png')}}" alt="logo">
                             <span class="font-semibold">Intech</span>fest
-                        </a>
+                        </a> -->
                         <h1 class="text-xl leading-tight tracking-normal text-gray-900 md:text-2xl dark:text-white">
                             Sign Up
                         </h1>
@@ -96,7 +108,7 @@
                                     <span>Password</span>
                                 </label>
                                 <div class="relative">
-                                    <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 focus:border-primary-lightblue focus:ring-primary-lightblue border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                                    <input type="password" name="password" id="password" placeholder="••••••••  " class="bg-gray-50 focus:border-primary-lightblue focus:ring-primary-lightblue border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
                                     <img src="{{asset('images/abstract/Hide.png')}}" alt="abstract image" id="eyeicon" class="cursor-pointer absolute right-3 bottom-2 w-6 opacity-50">
                                 </div>
                             </div>
