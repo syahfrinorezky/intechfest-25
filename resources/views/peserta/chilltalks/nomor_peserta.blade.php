@@ -47,7 +47,7 @@
                         <div class="w-full text-center">
                             <img src="{{asset('images/maskot/TungguApaLagi.png')}}" class="w-1/2 lg:w-1/3 mx-auto"
                                 alt="ivy wondering">
-                            <p class="mb-8 leading-relaxed mt-10 text-center">Terima kasih telah mendaftar webinar kami! Silahkan bergabung dalam grup WhatsApp <a href="https://chat.whatsapp.com/GfqhEZCjEcR4xJ5pd39PGO" class="text-primary-lightblue hover:text-primary-blue underline"><b>DISINI</b></a> untuk mendapatkan informasi tambahan! Dan berikut adalah nomer peserta anda.</p>
+                            <p class="mb-8 leading-relaxed mt-10 text-center">Terima kasih telah mendaftar webinar kami! Silahkan bergabung dalam grup WhatsApp <a href="" class="text-primary-lightblue hover:text-primary-blue underline"><b>DISINI</b></a> untuk mendapatkan informasi tambahan! Dan berikut adalah nomer peserta anda.</p>
                             <span class="border font-medium border-primary-lightblue p-4">Nomor Peserta: <span class="font-bold">{{$ctPeserta->nomer_peserta}}</span></span>
                         </div>
                     </div>
