@@ -172,41 +172,41 @@ class PesertaController extends Controller
     }
 
     // pendaftaran belum dibuka
-    // public function chilltalks()
-    // {
-    //     return view('errors.waktubelum');
-    // }
-
-    // pendaftaran sudah dibuka
     public function chilltalks()
     {
-        $user = Auth::user();
-        date_default_timezone_set('Asia/Singapore');
-        $waktututup = Carbon::createFromFormat('Y-m-d H:i:s', '2025-09-09 01:00:00', 'Asia/Singapore');
-        // $waktututup = new Carbon('2024-09-09 01:00:00');
-
-        $ct = Ct::where('sesi', 'Offline')->count();
-        $data_peserta = Peserta::where('email', $user->email)->first();
-        $id_peserta = $data_peserta->id_peserta;
-        // cek jika table ct sudah ada data peserta dengan id yang sama
-        $ctPeserta = Ct::where('id_peserta', $id_peserta)->first();
-        // jika ctPeserta tidak ada datanya
-        if($waktututup->isPast() AND $ctPeserta == NULL){
-            return view('errors.waktuHabis');
-        }else{
-            if(empty($ctPeserta)){
-                return view('peserta.chilltalks.form-ct', compact('data_peserta', 'ct'));
-            } // jika ada ambil transaksi dan cek jika belum validasi
-            else if(isset($ctPeserta->id_transaksi)){
-                $transaksi = Transaksi::where('id_transaksi', $ctPeserta->id_transaksi)->first();
-                if($transaksi->validasi == "Belum Tervalidasi"){
-                    return view('peserta.chilltalks.validasi_transaksi');
-                } else if($transaksi->validasi == "Sudah Valid") {
-                    return view('peserta.chilltalks.nomor_peserta', compact('ctPeserta'));
-                }
-            }
-        }
+        return view('errors.waktubelum');
     }
+
+    // pendaftaran sudah dibuka
+    // public function chilltalks()
+    // {
+    //     $user = Auth::user();
+    //     date_default_timezone_set('Asia/Singapore');
+    //     $waktututup = Carbon::createFromFormat('Y-m-d H:i:s', '2025-09-09 01:00:00', 'Asia/Singapore');
+    //     // $waktututup = new Carbon('2024-09-09 01:00:00');
+
+    //     $ct = Ct::where('sesi', 'Offline')->count();
+    //     $data_peserta = Peserta::where('email', $user->email)->first();
+    //     $id_peserta = $data_peserta->id_peserta;
+    //     // cek jika table ct sudah ada data peserta dengan id yang sama
+    //     $ctPeserta = Ct::where('id_peserta', $id_peserta)->first();
+    //     // jika ctPeserta tidak ada datanya
+    //     if($waktututup->isPast() AND $ctPeserta == NULL){
+    //         return view('errors.waktuHabis');
+    //     }else{
+    //         if(empty($ctPeserta)){
+    //             return view('peserta.chilltalks.form-ct', compact('data_peserta', 'ct'));
+    //         } // jika ada ambil transaksi dan cek jika belum validasi
+    //         else if(isset($ctPeserta->id_transaksi)){
+    //             $transaksi = Transaksi::where('id_transaksi', $ctPeserta->id_transaksi)->first();
+    //             if($transaksi->validasi == "Belum Tervalidasi"){
+    //                 return view('peserta.chilltalks.validasi_transaksi');
+    //             } else if($transaksi->validasi == "Sudah Valid") {
+    //                 return view('peserta.chilltalks.nomor_peserta', compact('ctPeserta'));
+    //             }
+    //         }
+    //     }
+    // }
     
     public function edit_profile(Request $request, $id)
     {
