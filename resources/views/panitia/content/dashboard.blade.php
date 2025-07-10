@@ -36,7 +36,7 @@
         <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
-          <h2 class="font-bold text-sm text-center">Design</h2>
+          <h2 class="font-bold text-sm text-center">PNBDC</h2>
           <span>
             <h3 class="text-center font-bold text-4xl">{{ $jumlahDC_belumvalid ?? 0 }}</h3>
             <p class="text-center text-sm">Peserta</p>
@@ -49,7 +49,7 @@
         <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
-          <h2 class="font-bold text-sm text-center">Web Design</h2>
+          <h2 class="font-bold text-sm text-center">PNBWDC</h2>
           <span>
             <h3 class="text-center font-bold text-4xl">{{ $jumlahWDC_belumvalid ?? 0 }}</h3>
             <p class="text-center text-sm">Peserta</p>
@@ -62,7 +62,7 @@
         <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
-          <h2 class="font-bold text-sm text-center">Capture The Flag</h2>
+          <h2 class="font-bold text-sm text-center">PNBCTF</h2>
           <span>
             <h3 class="text-center font-bold text-4xl">{{ $jumlahCTF_belumvalid ?? 0 }}</h3>
             <p class="text-center text-sm">Peserta</p>
@@ -100,7 +100,7 @@
         <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
-          <h2 class="font-bold text-sm text-center">Design</h2>
+          <h2 class="font-bold text-sm text-center">PNBDC</h2>
           <span>
             <h3 class="text-center font-bold text-4xl">{{ $jumlahDC ?? 0 }}</h3>
             <p class="text-center text-sm">Peserta</p>
@@ -113,7 +113,7 @@
         <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
-          <h2 class="font-bold text-sm text-center">Web Design</h2>
+          <h2 class="font-bold text-sm text-center">PNBWDC</h2>
           <span>
             <h3 class="text-center font-bold text-4xl">{{ $jumlahWDC ?? 0 }}</h3>
             <p class="text-center text-sm">Peserta</p>
@@ -126,7 +126,7 @@
         <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
-          <h2 class="font-bold text-sm text-center">Capture The Flag</h2>
+          <h2 class="font-bold text-sm text-center">PNBCTF</h2>
           <span>
             <h3 class="text-center font-bold text-4xl">{{ $jumlahCTF ?? 0 }}</h3>
             <p class="text-center text-sm">Peserta</p>

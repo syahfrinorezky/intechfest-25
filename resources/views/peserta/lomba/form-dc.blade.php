@@ -6,6 +6,8 @@
 
 {{-- membuat content disini --}}
 @section('content')
+<link rel="shortcut icon" href="{{ asset('images/logo/favicon.ico') }}">
+
 <!-- start content -->
 <div class="p-4 sm:ml-64 mt-14">
     <!-- Start block -->

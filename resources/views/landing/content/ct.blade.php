@@ -21,37 +21,33 @@
                 <a href="#" class="text-3xl font-bold text-primary-lightblue pb-4">ChillTalks</a>
                 <h1 class="text-2xl font-bold pb-3 mt-4">Deskripsi Seminar</h1>
                 <p class="pb-3 text-justify">
-                    ChillTalks merupakan seminar yang berskala nasional dalam kegiatan “Information and Technology Festival (IntechFest) 2024”. Tahun ini, ChillTalks membahas seputar teknologi informasi dan bertujuan untuk mengembangkan potensi diri serta meningkatkan pengetahuan di bidang teknologi informasi. Pada tahun ini ChillTalks akan membahas topik seputar <b>"Generative AI dan IoT dalam Transformasi Karir Masa Depan"</b>. Seminar ini dapat diikuti semua orang dan akan dilaksanakan secara hybrid, yaitu secara online dan offline.</p>
+                ChillTalks merupakan seminar berskala nasional yang membahas seputar teknologi informasi dan bertujuan untuk mengembangkan potensi diri serta meningkatkan pengetahuan di bidang teknologi informasi. Pada tahun ini ChillTalks akan membahas topik seputar "Level Up Your Digital Talent for the Gig Economy Era”    
+                </p>
                     
 
                 <h1 class="text-2xl font-bold pb-3 mt-4" id="timeline">Harga Pendaftaran</h1>
-                <p class="pb-3 text-justify">Harga Pendaftaran ChillTalks yaitu :</p>
+                <p class="pb-3 text-justify">Harga Pendaftaran Seminar ChillTalks yaitu :</p>
                 <ul class="max-w-lg space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                     <li>
-                        <b>ONLINE (BNI) : Rp. 15.000</b>
+                        <b>ONLINE (BCA) : Rp. 15.000</b>
                     </li>
-                    <li>
-                        <b>ONLINE (DANA) : Rp. 15.500</b>
-                    </li>
-                <!-- </ul>
+                </ul>
                 <ul class="mt-3 text-gray-500 list-disc list-inside dark:text-gray-400">
                     <li>
-                        <b>OFFLINE (BNI) : Rp. 18.000</b>
+                        <b>OFFLINE (BCA) : Rp. 18.000</b>
                     </li>
-                    <li>
-                        <b>OFFLINE (DANA) : Rp. 18.500</b>
-                    </li> -->
-                    <p class="pb-3 text-justify"><span><b>NOTE : </b></span>Pembayaran ke dana dikenakan biaya tambahan <b>Rp.500</b></p>
+                    <br>
+                    <!-- <p class="pb-3 text-justify"><span><b>NOTE : </b></span>Pembayaran ke dana dikenakan biaya tambahan <b>Rp.500</b></p> -->
                 </ul>
                 
                 <h1 class="text-2xl font-bold pb-3 mt-4" id="timeline">Nomor Rekening</h1>
                 <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                     <li>
-                        <b>DANA : 083119122161 a.n. NI LUH ANGGRENI PUTRI</b>
+                        <b>BCA : 1420920021 a.n. <span style="color: #50BFD0;">NI NYOMAN MITASARI</span></b>
                     </li>
-                    <li>
-                        <b>BNI  : 1856348388 a.n. NI LUH ANGGRENI PUTRI</b>                        
-                    </li>
+                    <!-- <li>
+                        <b>BNI  : 1856348388 a.n. </b>                        
+                    </li> -->
                 </ul>
 
                 <h1 class="text-2xl font-bold pb-3 mt-4" id="timeline">Timeline Seminar</h1>
@@ -72,7 +68,7 @@
                         <div class="mt-3 sm:pr-8">
                             <h3 class="text-md font-semibold text-gray-900 dark:text-white">Pendaftaran Seminar</h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 11 Agustus 2024</time>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 20 Juli 2025</time>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -91,7 +87,7 @@
                         <div class="mt-3 sm:pr-8">
                             <h3 class="text-md font-semibold text-gray-900 dark:text-white">Penutupan Pendaftaran Seminar</h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 8 September 2024</time>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 18 September 2025</time>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -108,9 +104,9 @@
                             <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div class="mt-3 sm:pr-8">
-                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Acara</h3>
+                            <h3 class="text-md font-semibold text-gray-900 dark:text-white">Acara Seminar</h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 22 September 2024</time>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 21 September 2025</time>
                         </div>
                     </li>
 
