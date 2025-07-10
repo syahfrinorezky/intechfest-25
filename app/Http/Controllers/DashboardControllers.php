@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class DashboardControllers extends Controller
 {
     public function index()
     {
+
+        Carbon::setLocale('id');
+        $hariIni = Carbon::now()->format('l, d F Y');
+
         /* ----------  Lomba DC, WDC, CTF (Sudah Valid)  ---------- */
         $jumlahDC  = DB::table('dc')
             ->where('validasi', 'Sudah Valid')
@@ -64,6 +69,7 @@ class DashboardControllers extends Controller
 
 
         return view('panitia.content.dashboard', compact(
+            'hariIni',
             'jumlahDC',
             'jumlahWDC',
             'jumlahCTF',
