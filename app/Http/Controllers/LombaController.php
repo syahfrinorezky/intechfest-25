@@ -26,7 +26,7 @@ class LombaController extends Controller
         //pada table users dengan mencocokan email pada table peserta dengan table users
         $data_peserta = Peserta::where('email', $user->email)->first();
         // atur batas
-        $batasWaktuWDC = new Carbon('2025-08-15 23:59:59');
+        $batasWaktuWDC = new Carbon('2025-08-01 23:59:59');
         if($batasWaktuWDC->isPast()){
             return view('errors.waktuHabis');
         }else{
@@ -299,7 +299,7 @@ class LombaController extends Controller
         //pada table users dengan mencocokan email pada table peserta dengan table users
         $data_peserta = Peserta::where('email', $user->email)->first();
 
-        $batasWaktuDC = new Carbon('2025-08-15 23:59:59');
+        $batasWaktuDC = new Carbon('2025-08-01 23:59:59');
         if($batasWaktuDC->isPast()){
             return view('errors.waktuHabis');
         }else{
@@ -569,7 +569,7 @@ class LombaController extends Controller
         //pada table users dengan mencocokan email pada table peserta dengan table users
         $data_peserta = Peserta::where('email', $user->email)->first();
 
-        $batasWaktuCTF = new Carbon('2025-09-05 23:59:59');
+        $batasWaktuCTF = new Carbon('2025-08-01 23:59:59');
         if($batasWaktuCTF->isPast()){
             return view('errors.waktuHabis');
         }else{

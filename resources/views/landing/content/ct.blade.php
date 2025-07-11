@@ -45,9 +45,9 @@
                     <li>
                         <b>BCA : 1420920021 a.n. <span style="color: #50BFD0;">NI NYOMAN MITASARI</span></b>
                     </li>
-                    <!-- <li>
-                        <b>BNI  : 1856348388 a.n. </b>                        
-                    </li> -->
+                    <li>
+                        <b>BRI : 478301022773538 a.n. <span style="color: #50BFD0;">NI WAYAN DINA SINTA GUSNADI</span></b>
+                    </li>
                 </ul>
 
                 <h1 class="text-2xl font-bold pb-3 mt-4" id="timeline">Timeline Seminar</h1>
