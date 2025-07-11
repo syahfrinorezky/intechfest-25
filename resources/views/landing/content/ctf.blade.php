@@ -41,8 +41,8 @@
                             <h3 class="text-md font-semibold text-gray-900 dark:text-white">Pendaftaran
                             </h3>
                             <time
-                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 10 Juli 2025</time>
-                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pendaftaran lomba PNBCTF akan dilakukan pada tanggal 10 Juli - 29 Juli 2025</p>
+                                class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 13 Juli 2025</time>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Pendaftaran lomba PNBCTF akan dilakukan pada tanggal 13 Juli - 1 Agustus 2025</p>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -60,9 +60,9 @@
                         </div>
                         <div class="mt-3 sm:pr-8">
                             <h3 class="text-md font-semibold text-gray-900 dark:text-white">Perlombaan PNBCTF</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 6 September 2025</time>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Tanggal 7 September 2025</time>
                             <p class="text-base font-normal text-gray-500 dark:text-gray-400">Perlombaan PNBCTF akan
-                                dilaksanakan pada tanggal 6 September 2025</p>
+                                dilaksanakan pada tanggal 7 September 2025</p>
                         </div>
                     </li>
                     <li class="relative mb-6 sm:mb-0">
@@ -137,7 +137,7 @@
 
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("29 Juli, 2025 23:59:59").getTime();
+    var countDownDate = new Date("August 01, 2025 23:59:59").getTime();
     // Update the count down every 1 second
     var x = setInterval(function() {            
         // Get today's date and time

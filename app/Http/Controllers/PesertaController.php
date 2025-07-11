@@ -53,10 +53,10 @@ class PesertaController extends Controller
         $batasWaktu = Carbon::createFromFormat('Y-m-d H:i:s', '2025-09-02 23:59:59', 'Asia/Singapore');
         
         // batas bayar transaksi WDC & DC
-        $batasWaktuTransaksi = new Carbon('2025-08-12 09:00:00');
+        $batasWaktuTransaksi = new Carbon('2025-08-01 09:00:00');
         
         // batas bayar transaksi CTF
-        $batasWaktuTransaksiCTF = new Carbon('2025-09-02 23:59:59');
+        $batasWaktuTransaksiCTF = new Carbon('2025-08-01 23:59:59');
 
         // cek jika peserta yang login mendaftar salah 1 dari 3 lomba yang ada
         $wdcPeserta = Wdc::where('id_peserta', $id_peserta)->first();
