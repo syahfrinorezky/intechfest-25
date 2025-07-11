@@ -446,19 +446,21 @@
         <div class="md:hidden w-80">
             <img class="object-cover object-center rounded mx-auto w-full" alt="hero" src="{{asset('images/lomba/ivy ct.png')}}" loading="lazy">
         </div>
-
         <div class="px-3 md:px-0 lg:px-0 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 class="title-font font-bold sm:text-3xl text-2xl mb-4 text-gray-900 mt-5 md:mt-0">ChillTalks
                 <br class="hidden lg:inline-block">
             </h1>
             <p class="mb-8 leading-relaxed text-gray-700 text-justify">ChillTalks merupakan seminar berskala nasional yang membahas seputar teknologi informasi dan bertujuan untuk mengembangkan potensi diri serta meningkatkan pengetahuan di bidang teknologi informasi. Pada tahun ini ChillTalks akan membahas topik seputar "Level Up Your Digital Talent for the Gig Economy Era”.</p>
-            <!-- <div class="flex justify-center pb-4">
-                {{-- Button Pendaftaran Buka --}}
-                <a href="{{url('/chilltalks-detail')}}"
-                    class="inline-flex overflow-hidden relative btn-slide text-white bg-primary-lightblue border-0 py-2 px-6 focus:outline-none rounded text-lg">
-                    <span class="relative z-10">Daftar Chilltalks</span>
-                </a>
-            </div> -->
+            <div class="flex flex-col pb-4">
+            <div id="countdown-wrapper" class="text-sm text-gray-600 mb-2">
+                Pendaftaran dibuka dalam <span id="countdown" class="font-semibold text-[#50BFD0]"></span>
+            </div>
+            <a href="{{ url('/chilltalks-detail') }}"
+                id="daftarButton"
+                class="block w-fit px-6 py-2 bg-gray-400 text-white text-lg rounded cursor-not-allowed pointer-events-none transition-all duration-300 text-center mx-auto md:mx-0">
+                Daftar Chilltalks
+            </a>
+            </div>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 hidden md:flex">
             <img class="object-cover object-center rounded mx-auto max-w-96" alt="hero" src="{{asset('images/lomba/ivy ct.png')}}" loading="lazy">
@@ -811,5 +813,31 @@
         p.classList.toggle(tinggi);
         i.classList.toggle("rotate-180");
     }
+
+    // Ini untuk countdown button chilltalks hehe
+    const openTime = new Date("2025-07-20T00:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
+    const button = document.getElementById("daftarButton");
+    const wrapper = document.getElementById("countdown-wrapper");
+
+    const timer = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = openTime - now;
+
+    if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    } else {
+        clearInterval(timer);
+        wrapper.style.display = "none";
+        button.classList.remove("bg-gray-400", "cursor-not-allowed", "pointer-events-none");
+        button.classList.add("bg-[#50BFD0]");
+    }
+}, 1000);
+
 </script>
 @endsection

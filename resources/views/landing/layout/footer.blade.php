@@ -23,8 +23,12 @@
                     <li class="mb-4">
                         <a href="{{url('/detail-ctf')}}" class="hover:underline">Capture The Flag</a>
                     </li>
+                    <!-- Hapus class pas udah open regist ct -->
                     <li>
-                        <a href="{{url('/chilltalks-detail')}}" class="hover:underline">ChillTalks</a>
+                        <a href="{{ url('/chilltalks-detail') }}"
+                        class="hover:underline text-gray-400 pointer-events-none cursor-not-allowed">
+                            ChillTalks
+                        </a>
                     </li>
                 </ul>
             </div>
