@@ -507,18 +507,24 @@ class PanitiaController extends Controller
             join('wdc', 'project.id_project', '=', 'wdc.id_project')
             ->join('peserta', 'wdc.id_peserta', '=', 'peserta.id_peserta')
             ->select('project.*', 'peserta.*')
+            ->whereNotNull('wdc.id_project')
+            ->whereNotNull('file_project') 
             ->where('file_project', 'LIKE', 'WDC%')
             ->where(function($query) use ($search) {  
                 $query->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
                     ->orWhere('peserta.email','LIKE','%'.$search.'%');  
                 })
+            ->distinct()     
             ->paginate();
         }else{
             $projectwdc = Project::
             join('wdc', 'project.id_project', '=', 'wdc.id_project')
             ->join('peserta', 'wdc.id_peserta', '=', 'peserta.id_peserta')
             ->select('project.*', 'peserta.*')
-            ->where('file_project', 'LIKE', 'WDC%')
+            ->whereNotNull('wdc.id_project')
+            ->whereNotNull('file_project') 
+            ->where('file_project', 'LIKE', 'WDC%')  
+            ->distinct()
             ->paginate(15);    
         }
 
@@ -536,10 +542,13 @@ class PanitiaController extends Controller
             ->join('peserta', 'dc.id_peserta', '=', 'peserta.id_peserta')
             ->select('project.*', 'peserta.*')
             ->where('file_project', 'LIKE', 'DC%')
+            ->whereNotNull('dc.id_project')
+            ->whereNotNull('file_project')
             ->where(function($query) use ($search) {  // 
                 $query->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
                     ->orWhere('peserta.email','LIKE','%'.$search.'%');  
                 })
+            ->distinct()     
             ->paginate();
         }else{
             $projectdc = Project::
@@ -547,6 +556,9 @@ class PanitiaController extends Controller
             ->join('peserta', 'dc.id_peserta', '=', 'peserta.id_peserta')
             ->select('project.*', 'peserta.*')
             ->where('file_project', 'LIKE', 'DC%')
+            ->whereNotNull('dc.id_project')
+            ->whereNotNull('file_project')
+            ->distinct() 
             ->paginate(15);    
         }
 
