@@ -18,6 +18,7 @@ class Ct extends Model
         'id_transaksi',
         'nomer_peserta',
         'sesi',
+        'bank',
         'created_at',
         'updated_at',
         'deleted_at'
