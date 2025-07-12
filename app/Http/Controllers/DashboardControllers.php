@@ -66,7 +66,47 @@ class DashboardControllers extends Controller
         $jumlahCTOffline_belumvalid = (clone $ctBase)->where('ct.sesi', 'Offline')->count();
         $jumlahCTOnline_belumvalid  = (clone $ctBase)->where('ct.sesi', 'Online')->count();
 
+        /* ----------  Transaksi DC, WDC, CTF (Belum Valid)  ---------- */
+        $transaksiDC_belumvalid = DB::table('dc')
+            ->join('transaksi', 'dc.id_transaksi', '=', 'transaksi.id_transaksi')
+            ->where('transaksi.validasi', 'Belum Tervalidasi')
+            ->whereNull('dc.deleted_at')
+            ->count();
 
+        $transaksiWDC_belumvalid = DB::table('wdc')
+            ->join('transaksi', 'wdc.id_transaksi', '=', 'transaksi.id_transaksi')
+            ->where('transaksi.validasi', 'Belum Tervalidasi')
+            ->whereNull('wdc.deleted_at')
+            ->count();
+
+        $transaksiCTF_belumvalid = DB::table('ctf')
+            ->join('transaksi', 'ctf.id_transaksi', '=', 'transaksi.id_transaksi')
+            ->where('transaksi.validasi', 'Belum Tervalidasi')
+            ->whereNull('ctf.deleted_at')
+            ->count();
+        
+        /* ----------  Transaksi DC, WDC (Sudah Valid)  ---------- */
+        $transaksiDC = DB::table('dc')
+            ->join('transaksi', 'dc.id_transaksi', '=', 'transaksi.id_transaksi')
+            ->where('transaksi.validasi', 'Sudah Valid')
+            ->whereNull('dc.deleted_at')
+            ->count();
+        
+        $transaksiWDC = DB::table('wdc')
+            ->join('transaksi', 'wdc.id_transaksi', '=', 'transaksi.id_transaksi')
+            ->where('transaksi.validasi', 'Sudah Valid')
+            ->whereNull('wdc.deleted_at')
+            ->count();
+
+        $transaksiCTF = DB::table('ctf')
+            ->join('transaksi', 'ctf.id_transaksi', '=', 'transaksi.id_transaksi')
+            ->where('transaksi.validasi', 'Sudah Valid')
+            ->whereNull('ctf.deleted_at')
+            ->count();
+
+        $jumlahSemuaDC = $this->jumlahSemua('dc');
+        $jumlahSemuaWDC = $this->jumlahSemua('wdc');
+        $jumlahSemuaCTF = $this->jumlahSemua('ctf');
 
         return view('panitia.content.dashboard', compact(
             'hariIni',
@@ -79,7 +119,38 @@ class DashboardControllers extends Controller
             'jumlahWDC_belumvalid',
             'jumlahCTF_belumvalid',
             'jumlahCTOffline_belumvalid',
-            'jumlahCTOnline_belumvalid'
+            'jumlahCTOnline_belumvalid',
+            'transaksiWDC',
+            'transaksiCTF',
+            'transaksiDC',
+            'transaksiDC_belumvalid',
+            'transaksiWDC_belumvalid',
+            'transaksiCTF_belumvalid',
+            'jumlahSemuaDC',
+            'jumlahSemuaWDC',
+            'jumlahSemuaCTF',
         ));
+    }
+
+    public function jumlahSemua($table) {
+        return [
+        'lolos' => DB::table($table)
+            ->join('transaksi', "$table.id_transaksi", '=', 'transaksi.id_transaksi')
+            ->where("$table.validasi", 'Sudah Valid')
+            ->where('transaksi.validasi', 'Sudah Valid')
+            ->whereNull("$table.deleted_at")
+            ->distinct()
+            ->count("$table.id_peserta"),
+
+        'proses' => DB::table($table)
+            ->join('transaksi', "$table.id_transaksi", '=', 'transaksi.id_transaksi')
+            ->where(function ($query) use ($table) {
+                $query  ->where("$table.validasi", '!=', 'Sudah Valid')
+                        ->orWhere('transaksi.validasi', '!=', 'Sudah Valid');
+            })
+            ->whereNull("$table.deleted_at")
+            ->distinct()
+            ->count("$table.id_peserta")
+    ];
     }
 }
