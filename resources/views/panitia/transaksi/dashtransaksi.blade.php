@@ -103,7 +103,17 @@
                                         </a>                                          
                                     </td>
                                     <td class="px-4 py-3">{{$data->no_hp}}</td>
-                                    <td class="px-4 py-3">{{$data->validasi}}</td>
+                                    <td class="px-4 py-3">
+                                        @if($data->validasi === 'Belum Tervalidasi')
+                                            <p class="text-yellow-400">
+                                                {{ $data->validasi }}
+                                            </p>
+                                        @elseif($data->validasi === 'Sudah Valid')
+                                            <p class="font-semibold text-green-400">
+                                                {{ $data->validasi }}
+                                            </p>
+                                        @endif
+                                    </td>
                                     <td class="px-4 py-3">
                                         <!-- <button id="apple-imac-27-dropdown-button"
                                             data-dropdown-toggle="apple-imac-27-dropdown"
