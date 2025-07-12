@@ -25,6 +25,7 @@ class ChillTalksController extends Controller
             'nama_instansi' => 'required',
             'no_hp' => 'required|numeric',
             'sesi' => 'required',
+            'bank' => 'required|in:bca,bri',
             'foto' => 'required|mimes:png,jpg,jpeg|max:2000'
         ],[
             'foto.required' => 'Form Upload Foto tidak boleh kosong',
@@ -88,6 +89,7 @@ class ChillTalksController extends Controller
         $ct = [
             'nomer_peserta' => $nomer_peserta,
             'sesi' => $request->sesi,
+            'bank' => $request->bank,
             'id_peserta' => $request->id_peserta,
         ];
         
