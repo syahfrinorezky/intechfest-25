@@ -15,6 +15,8 @@
     <p class="text-m italic mt-1">Semoga harimu menyenangkan dan produktif!</p>
   </div> --}}
 
+  
+  
   {{-- sambutan yang baru (butuh saran kalo ada) --}}
   <div class="p-2 flex flex-col sm:flex-row items-center sm:justify-between sm:border-b sm:border-gray-200">
     <div class="py-2 flex items-center gap-1 border-b border-gray-200 sm:border-none">
@@ -28,11 +30,74 @@
   </div>
 
   <div class="flex flex-col gap-5 rounded-lg shadow-shadow-gray-300 sm:p-4">
-    <h1 class="font-bold text-gray-800">Jumlah Peserta Belum Tervalidasi</h1>
+    <h1 class="flex items-center font-bold text-gray-800"><i class="fas fa-user text-lg text-green-500 mr-2"></i>Total Peserta Resmi</h1>
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
       {{-- DC --}}
-      <div class="p-3 flex flex-col bg-white text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+      <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBDC</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $jumlahSemuaDC['lolos'] ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div>
+
+      {{-- WDC --}}
+      <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBWDC</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $jumlahSemuaWDC['lolos'] ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div>
+
+      {{-- CTF --}}
+      <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBCTF</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $jumlahSemuaCTF['lolos'] ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">ChillTalks</h2>
+          <div class="flex justify-center gap-2">
+            <span>
+              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCTOnline ?? 0 }}</h3>
+              <p class="text-center text-sm">Online</p>
+            </span>
+            <span>
+              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCTOffline ?? 0 }}</h3>
+              <p class="text-center text-sm">Offline</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flex flex-col gap-5 rounded-lg shadow-shadow-gray-300 sm:p-4">
+    <h1 class="flex items-center font-bold text-gray-800"><i class="fas fa-clock text-lg text-yellow-300 mr-2"></i>Administrasi Belum Tervalidasi</h1>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+      {{-- DC --}}
+      <div class="p-3 flex flex-col bg-yellow-200/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
         <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
@@ -45,7 +110,7 @@
       </div>
 
       {{-- WDC --}}
-      <div class="p-3 flex flex-col bg-white text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+      <div class="p-3 flex flex-col bg-yellow-200/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
         <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
@@ -58,7 +123,7 @@
       </div>
 
       {{-- CTF --}}
-      <div class="p-3 flex flex-col bg-white text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+      <div class="p-3 flex flex-col bg-yellow-200/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
         <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
@@ -69,34 +134,15 @@
           </span>
         </div>
       </div>
-
-      {{-- CT --}}
-      <div class="p-3 flex flex-col bg-white text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
-        <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
-        
-        <div class="flex flex-col gap-3 w-full z-10">
-          <h2 class="font-bold text-sm text-center">ChillTalks</h2>
-          <div class="flex justify-center gap-2">
-            <span>
-              <h3 class="text-center font-bold text-2xl sm:text-4xl">{{ $jumlahCT_belumvalid ?? 0 }}</h3>
-              <p class="text-center text-sm">Online</p>
-            </span>
-            <span>
-              <h3 class="text-center font-bold text-2xl sm:text-4xl">{{ $jumlahCT_offline_belumvalid ?? 0 }}</h3>
-              <p class="text-center text-sm">Offline</p>
-            </span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
-  <div class="flex flex-col gap-5 rounded-lg shadow-shadow-gray-300 sm:p-4">
-    <h1 class="font-bold text-gray-800">Jumlah Peserta Sudah Tervalidasi</h1>
+  {{-- <div class="flex flex-col gap-5 rounded-lg shadow-shadow-gray-300 sm:p-4">
+    <h1 class="flex items-center font-bold text-gray-800"><i class="fas fa-circle-check text-lg text-green-500 mr-2"></i>Administrasi Sudah Tervalidasi</h1>
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
       {{-- DC --}}
-      <div class="p-3 flex flex-col bg-slate-200 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+      {{-- <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
         <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
@@ -106,10 +152,10 @@
             <p class="text-center text-sm">Peserta</p>
           </span>
         </div>
-      </div>
+      </div> --}}
 
       {{-- WDC --}}
-      <div class="p-3 flex flex-col bg-slate-200 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+      {{-- <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
         <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
@@ -119,10 +165,10 @@
             <p class="text-center text-sm">Peserta</p>
           </span>
         </div>
-      </div>
+      </div> --}}
 
       {{-- CTF --}}
-      <div class="p-3 flex flex-col bg-slate-200 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+      {{-- <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
         <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
@@ -133,20 +179,65 @@
           </span>
         </div>
       </div>
+    </div>
+  </div> --}}
+
+  <div class="flex flex-col gap-5 rounded-lg shadow-shadow-gray-300 sm:p-4">
+    <h1 class="flex items-center font-bold text-gray-800"><i class="fas fa-clock text-lg text-yellow-300 mr-2"></i>Transaksi Belum Tervalidasi</h1>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+      {{-- DC --}}
+      <div class="p-3 flex flex-col bg-yellow-200/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBDC</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $transaksiDC_belumvalid ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div>
+
+      {{-- WDC --}}
+      <div class="p-3 flex flex-col bg-yellow-200/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBWDC</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $transaksiWDC_belumvalid ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div>
+
+      {{-- CTF --}}
+      <div class="p-3 flex flex-col bg-yellow-200/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBCTF</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $transaksiCTF_belumvalid ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div>
 
       {{-- CT --}}
-      <div class="p-3 flex flex-col bg-slate-200 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+      <div class="p-3 flex flex-col bg-yellow-200/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
         <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
         
         <div class="flex flex-col gap-3 w-full z-10">
           <h2 class="font-bold text-sm text-center">ChillTalks</h2>
           <div class="flex justify-center gap-2">
             <span>
-              <h3 class="text-center font-bold text-2xl sm:text-4xl">{{ $jumlahCTOnline ?? 0 }}</h3>
+              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCT_belumvalid ?? 0 }}</h3>
               <p class="text-center text-sm">Online</p>
             </span>
             <span>
-              <h3 class="text-center font-bold text-2xl sm:text-4xl">{{ $jumlahCTOffline ?? 0 }}</h3>
+              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCT_offline_belumvalid ?? 0 }}</h3>
               <p class="text-center text-sm">Offline</p>
             </span>
           </div>
@@ -154,6 +245,70 @@
       </div>
     </div>
   </div>
+
+  {{-- <div class="flex flex-col gap-5 rounded-lg shadow-shadow-gray-300 sm:p-4">
+    <h1 class="flex items-center font-bold text-gray-800"><i class="fas fa-circle-check text-lg text-green-500 mr-2"></i>Transaksi Sudah Tervalidasi</h1>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2"> --}}
+      {{-- DC --}}
+      {{-- <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBDC</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $transaksiDC ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div> --}}
+
+      {{-- WDC --}}
+      {{-- <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="logo wdc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBWDC</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $transaksiWDC ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div> --}}
+
+      {{-- CTF --}}
+      {{-- <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="logo ctf" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">PNBCTF</h2>
+          <span>
+            <h3 class="text-center font-bold text-4xl">{{ $transaksiCTF ?? 0 }}</h3>
+            <p class="text-center text-sm">Peserta</p>
+          </span>
+        </div>
+      </div> --}}
+
+      {{-- CT --}}
+      {{-- <div class="p-3 flex flex-col bg-green-500/20 text-gray-800 shadow-lg shadow-gray-300 border border-gray-300 rounded-lg relative overflow-hidden">
+        <img src="{{ asset('images/logo/ct-vector.svg') }}" alt="logo dc" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 opacity-20 -z-0">
+        
+        <div class="flex flex-col gap-3 w-full z-10">
+          <h2 class="font-bold text-sm text-center">ChillTalks</h2>
+          <div class="flex justify-center gap-2">
+            <span>
+              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCTOnline ?? 0 }}</h3>
+              <p class="text-center text-sm">Online</p>
+            </span>
+            <span>
+              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCTOffline ?? 0 }}</h3>
+              <p class="text-center text-sm">Offline</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> --}}
 
   <!-- Jumlah Peserta (yang BELUM TERVALIDASI cuy!)-->
   {{-- <div class="bg-gray-100 p-6 rounded-lg shadow mb-6">
@@ -168,7 +323,7 @@
           <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="DC" class="w-[30px] h-[30px]">
         </div>
         <div>
-          <div class="text-xl md:text-2xl font-bold">{{ $jumlahDC_belumvalid ?? 0 }} Peserta</div>
+          <div class="text-xl md:text-lg font-bold">{{ $jumlahDC_belumvalid ?? 0 }} Peserta</div>
           <div class="font-base italic text-base md:text-lg">Design Challenge</div>
         </div>
       </div>
@@ -179,7 +334,7 @@
           <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="WDC" class="w-[30px] h-[30px]">
         </div>
         <div>
-          <div class="text-xl md:text-2xl font-bold">{{ $jumlahWDC_belumvalid ?? 0 }} Peserta</div>
+          <div class="text-xl md:text-lg font-bold">{{ $jumlahWDC_belumvalid ?? 0 }} Peserta</div>
           <div class="font-base italic text-base md:text-lg">Web Design Competition</div>
         </div>
       </div>
@@ -190,7 +345,7 @@
           <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="CTF" class="w-[30px] h-[30px]">
         </div>
         <div>
-          <div class="text-xl md:text-2xl font-bold">{{ $jumlahCTF_belumvalid ?? 0 }} Tim</div>
+          <div class="text-xl md:text-lg font-bold">{{ $jumlahCTF_belumvalid ?? 0 }} Tim</div>
           <div class="font-base italic text-base md:text-lg">Capture The Flag</div>
         </div>
       </div>
@@ -226,7 +381,7 @@
           <img src="{{ asset('images/logo/dc-vector.svg') }}" alt="DC" class="w-[30px] h-[30px]">
         </div>
         <div>
-          <div class="text-xl md:text-2xl font-bold">{{ $jumlahDC ?? 0 }} Peserta</div>
+          <div class="text-xl md:text-lg font-bold">{{ $jumlahDC ?? 0 }} Peserta</div>
           <div class="font-base italic text-base md:text-lg">Design Challenge</div>
         </div>
       </div>
@@ -237,7 +392,7 @@
           <img src="{{ asset('images/logo/wdc-vector.svg') }}" alt="WDC" class="w-[30px] h-[30px]">
         </div>
         <div>
-          <div class="text-xl md:text-2xl font-bold">{{ $jumlahWDC ?? 0 }} Peserta</div>
+          <div class="text-xl md:text-lg font-bold">{{ $jumlahWDC ?? 0 }} Peserta</div>
           <div class="font-base italic text-base md:text-lg">Web Design Competition</div>
         </div>
       </div>
@@ -248,7 +403,7 @@
           <img src="{{ asset('images/logo/ctf-vector.svg') }}" alt="CTF" class="w-[30px] h-[30px]">
         </div>
         <div>
-          <div class="text-xl md:text-2xl font-bold">{{ $jumlahCTF ?? 0 }} Tim</div>
+          <div class="text-xl md:text-lg font-bold">{{ $jumlahCTF ?? 0 }} Tim</div>
           <div class="font-base italic text-base md:text-lg">Capture The Flag</div>
         </div>
       </div>
