@@ -233,11 +233,11 @@
           <h2 class="font-bold text-sm text-center">ChillTalks</h2>
           <div class="flex justify-center gap-2">
             <span>
-              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCT_belumvalid ?? 0 }}</h3>
+              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCTOnline_belumvalid ?? 0 }}</h3>
               <p class="text-center text-sm">Online</p>
             </span>
             <span>
-              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $jumlahCT_offline_belumvalid ?? 0 }}</h3>
+              <h3 class="text-center font-bold text-lg sm:text-4xl">{{ $$jumlahCTOffline_belumvalid ?? 0 }}</h3>
               <p class="text-center text-sm">Offline</p>
             </span>
           </div>
