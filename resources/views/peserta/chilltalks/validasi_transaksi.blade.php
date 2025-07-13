@@ -48,7 +48,12 @@
                                 alt="ivy wondering">
                             <p class="mb-8 leading-relaxed mt-10 text-center">Mohon menunggu, bukti transaksi Anda sedang divalidasi oleh panitia IntechFest. Jika dalam 2x24 jam panitia belum memvalidasi data Anda, silahkan hubungi nomor WhatsApp dengan mengklik button dibawah ini. Terima kasih atas kerjasamanya...</p>
                             <div class="flex justify-center">
-                                <a href="https://wa.me/+6282146775407?text=Halo Kak, Saya {{auth()->user()->name}} ingin mengonfirmasi bukti transaksi saya. Saya mendaftar di seminar ChillTalks" target="_blank"
+                                @php
+                                    $nomorPanitia = $ctPeserta->bank == 'bca' ? '6282146775407' : '6285736074965';
+                                    $bankDipake = $ctPeserta->bank == 'bca' ? 'BCA' : 'BRI';
+                                @endphp
+
+                                <a href="https://wa.me/{{ $nomorPanitia }}?text=Halo Kak, Saya {{auth()->user()->name}} ingin mengonfirmasi bukti transaksi saya. Saya mendaftar di seminar ChillTalks melalui transfer bank {{ $bankDipake }}" target="_blank"
                                     class="inline-flex text-white bg-primary-lightblue border-0 py-2 px-6 focus:outline-none hover:bg-primary-blue transition-all ease-in-out rounded text-lg">Hubungi Panitia</a>
                             </div>
                         </div>

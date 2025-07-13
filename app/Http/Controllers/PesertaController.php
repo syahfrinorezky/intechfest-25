@@ -200,7 +200,7 @@ class PesertaController extends Controller
     //         else if(isset($ctPeserta->id_transaksi)){
     //             $transaksi = Transaksi::where('id_transaksi', $ctPeserta->id_transaksi)->first();
     //             if($transaksi->validasi == "Belum Tervalidasi"){
-    //                 return view('peserta.chilltalks.validasi_transaksi');
+    //                 return view('peserta.chilltalks.validasi_transaksi', compact('ctPeserta'));
     //             } else if($transaksi->validasi == "Sudah Valid") {
     //                 return view('peserta.chilltalks.nomor_peserta', compact('ctPeserta'));
     //             }

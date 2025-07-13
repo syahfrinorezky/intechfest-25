@@ -142,17 +142,43 @@
                     </div>
                     <div class="flex flex-col space-y-2 my-2.5">
                         <h1 class="font-medium text-sm text-gray-900">Rekening Pembayaran</h1>
-                        <p class="text-sm text-gray-900">BCA <br> a.n <span class="text-primary-blue font-semibold">NI NYOMAN MITASARI</span></p>
-                        <div class="flex gap-x-2">
-                            <input type="text" id="rekening" value="1420920021" readonly
-                            class="border rounded text-center py-2 text-sm bg-gray-200 text-gray-800" />
-                            
-                            <button id="copyBtn"
-                            type="button"
-                            onclick="copyRekening()"
-                            class="bg-primary-lightblue text-white px-3 py-1 rounded hover:bg-primary-blue transition-colors ease-in-out duration-300">
-                            Salin
-                            </button>
+                        <div class="flex flex-col sm:flex-row gap-y-2 sm:gap-x-5">
+                            <div class="flex flex-col gap-y-2">
+                                <p class="text-sm text-gray-900">BCA <br> a.n <span class="text-primary-blue font-semibold">NI NYOMAN MITASARI</span></p>
+                                <div class="flex gap-x-2">
+                                    <input type="text" id="rekening-bca" value="1420920021" readonly
+                                        class="border rounded text-center py-2 text-sm bg-gray-200 text-gray-800" />
+                                    
+                                    <button id="copyBtn-bca"
+                                            type="button"
+                                            onclick="copyRekening('rekening-bca', 'copyBtn-bca')"
+                                            class="bg-primary-lightblue text-white px-3 py-1 rounded hover:bg-primary-blue transition-colors ease-in-out duration-300">
+                                        Salin
+                                    </button>
+                                </div>
+                            </div>    
+                            <div class="flex flex-col gap-y-2">
+                                <p class="text-sm text-gray-900">BRI <br> a.n <span class="text-primary-blue font-semibold uppercase">Ni Wayan Dina Sinta Gusnadi</span></p>
+                                <div class="flex gap-x-2">
+                                    <input type="text" id="rekening-bri" value="478301022773538" readonly
+                                        class="border rounded text-center py-2 text-sm bg-gray-200 text-gray-800" />
+                                    
+                                    <button id="copyBtn-bri"
+                                            type="button"
+                                            onclick="copyRekening('rekening-bri', 'copyBtn-bri')"
+                                            class="bg-primary-lightblue text-white px-3 py-1 rounded hover:bg-primary-blue transition-colors ease-in-out duration-300">
+                                        Salin
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-y-2">
+                            <label for="bank" class="font-medium text-sm text-gray-900">Pilih Bank</label>
+                            <select name="bank" id="bank" class="border border-gray-300 hover:border-primary-lightblue focus:border-primary-blue text-gray-900 text-sm rounded-lg cursor-pointer transition-all" required>
+                                <option value="" hidden>-- PILIH BANK --</option>
+                                <option value="bca">BCA - 1420920021</option>
+                                <option value="bri">BRI - 478301022773538</option>
+                            </select>
                         </div>
                     </div>
                     <label class="block my-2.5 text-sm font-medium text-gray-900 dark:text-white" for="user_avatar">Upload
@@ -173,9 +199,10 @@
 
 {{-- js buat tombol salin rekening ya --}}
 <script>
-    function copyRekening() {
-        const rekening = document.getElementById('rekening').value;
-        const copyBtn = document.getElementById('copyBtn');
+    function copyRekening(inputId, buttonId) {
+        // ambil value dari input field berdasarkan ID
+        const rekening = document.getElementById(inputId).value;
+        const copyBtn = document.getElementById(buttonId);
 
         navigator.clipboard.writeText(rekening).then(() => {
             copyBtn.textContent = "Disalin!";
