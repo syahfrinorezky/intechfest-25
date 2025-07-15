@@ -82,6 +82,7 @@
                                 <th scope="col" class="px-4 py-3">NAMA PESERTA</th>
                                 <th scope="col" class="px-4 py-3">VERIFIKASI OLEH</th>
                                 <th scope="col" class="px-4 py-3">BUKTI TRANSAKSI</th>
+                                <th scope="col" class="px-4 py-3">BANK</th>
                                 <th scope="col" class="px-4 py-3">NO. TELPON</th>
                                 <th scope="col" class="px-4 py-3">SESI</th>
                                 <th scope="col" class="px-4 py-3">VALIDASI</th>
@@ -108,6 +109,7 @@
                                             <h1 class="text-sky-500 italic font-weight-bold hover:underline" value="{{$data->foto}}" id="foto">Lihat Foto</h1>
                                         </a>
                                     </td>
+                                    <td class="px-4 py-3">{{ strtoupper($data->bank) }}</td>
                                     <td class="px-4 py-3">{{$data->no_hp}}</td>
                                     <td class="px-4 py-3">{{$data->sesi_peserta}}</td>
                                     <td class="px-4 py-3">
