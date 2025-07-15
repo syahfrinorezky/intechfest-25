@@ -432,7 +432,7 @@ class PanitiaController extends Controller
             join('ct', 'transaksi.id_transaksi', '=', 'ct.id_transaksi')
             ->join('peserta', 'ct.id_peserta', '=', 'peserta.id_peserta')
             ->leftjoin('panitia', 'transaksi.id_panitia', '=', 'panitia.id_panitia')
-            ->select('transaksi.*', 'peserta.nama_lengkap AS nama_peserta', 'panitia.nama_lengkap AS nama_panitia', 'peserta.no_hp AS no_hp', 'ct.sesi AS sesi_peserta')
+            ->select('transaksi.*', 'peserta.nama_lengkap AS nama_peserta', 'panitia.nama_lengkap AS nama_panitia', 'peserta.no_hp AS no_hp','ct.bank' ,'ct.sesi AS sesi_peserta')
             ->where('peserta.nama_lengkap','LIKE','%'.$search.'%')
             ->orWhere('peserta.email','LIKE','%'.$search.'%')
             ->orWhere('transaksi.validasi','LIKE','%'.$search.'%')
@@ -443,7 +443,7 @@ class PanitiaController extends Controller
             join('ct', 'transaksi.id_transaksi', '=', 'ct.id_transaksi')
             ->join('peserta', 'ct.id_peserta', '=', 'peserta.id_peserta')
             ->leftjoin('panitia', 'transaksi.id_panitia', '=', 'panitia.id_panitia')
-            ->select('transaksi.*', 'peserta.nama_lengkap AS nama_peserta', 'panitia.nama_lengkap AS nama_panitia', 'peserta.no_hp AS no_hp', 'ct.sesi AS sesi_peserta')
+            ->select('transaksi.*', 'peserta.nama_lengkap AS nama_peserta', 'panitia.nama_lengkap AS nama_panitia', 'peserta.no_hp AS no_hp', 'ct.bank', 'ct.sesi AS sesi_peserta')
             ->wherenull('ct.deleted_at')
             ->paginate(15);
         }
