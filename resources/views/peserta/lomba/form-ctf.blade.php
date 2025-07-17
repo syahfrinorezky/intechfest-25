@@ -13,7 +13,7 @@
     <!-- Start block -->
     <section class="p-3 sm:p-5 antialiased">
         <div class="mx-auto">
-            <h2 class="text-base font-semibold leading-7 text-gray-900">Profil Peserta</h2>
+            <h2 class="text-base font-semibold leading-7 text-gray-900">Profil Peserta <span class="text-primary-blue font-bold">Capture The Flag</span></h2>
             <p class="mt-1 mb-6 text-sm leading-6 text-gray-600">Silakan lengkapi semua informasi yang diperlukan untuk profil Anda dengan benar</p>
             @if ($errors->any())
             <div id="alert-2" class="flex p-4 mb-4 text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"

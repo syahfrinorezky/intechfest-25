@@ -11,7 +11,8 @@
     <!-- Start block -->
     <section class="p-3 sm:p-5 antialiased">
         <div class="mx-auto">
-            <h2 class="text-base mb-6 font-semibold leading-7 text-gray-900">Transaksi</h2>
+            <h2 class="text-base font-semibold leading-7 text-gray-900">Transaksi <span class="text-primary-blue font-bold">Design Challenge</span></h2>
+            <p class="mt-1 mb-6 text-sm leading-6 text-gray-600">Silahkan upload bukti transaksi pembayaran anda pada nomor rekening yang tertera</p>
             <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
                 <ol class="space-y-4 w-full">
                     <li>
